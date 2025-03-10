@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { generateKeyPair } from "@/lib/crypto";
+import Link from "next/link";
 
 export default function Signup() {
   const [username, setUsername] = useState<string>("");
@@ -16,18 +17,69 @@ export default function Signup() {
   const handleSignup = async (): Promise<void> => {
     try {
       const trimmedEmail = email.trim();
-      console.log("Raw email input:", email); // Before trim
-      console.log("Trimmed email sent:", trimmedEmail); // After trim
+      console.log("Raw email input:", email);
+      console.log("Trimmed email sent:", trimmedEmail);
       if (!trimmedEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
         throw new Error("Please enter a valid email address");
       }
       if (password.length < 6) {
         throw new Error("Password must be at least 6 characters");
       }
-  
-      const { data, error } = await supabase.auth.signUp({ email: trimmedEmail, password });
+      if (!username) {
+        throw new Error("Username is required");
+      }
+
+      // Generate E2EE keys
+      const keys = await generateKeyPair();
+      console.log("Keys generated:", keys);
+      if (!keys || !keys.publicKey || !keys.privateKey) {
+        throw new Error("Failed to generate key pair");
+      }
+      const { publicKey, privateKey } = keys;
+      console.log("Generated keys:", { publicKey: publicKey.slice(0, 50) + "...", privateKey: privateKey.slice(0, 50) + "..." });
+
+      // Sign up with Supabase Auth
+      const { data, error } = await supabase.auth.signUp({
+        email: trimmedEmail,
+        password,
+        options: {
+          data: { username, phone_number: phoneNumber || "" },
+        },
+      });
       console.log("SignUp response:", { data, error });
-      // ...rest of the function...
+
+      if (error) throw error;
+      if (!data.user) throw new Error("Signup failed: No user returned");
+
+      // Insert into users table
+      const { data: userData, error: userError } = await supabase.from("users").insert({
+        id: data.user.id,
+        username,
+        email: trimmedEmail,
+        password: await import("bcryptjs").then(({ hash }) => hash(password, 10)),
+        phone_number: phoneNumber || null,
+        public_key: publicKey,
+      }).select();
+      console.log("Users insert:", { data: userData, error: userError });
+      if (userError) throw userError;
+
+      // Insert into encryption_keys
+      const { data: keyData, error: keyError } = await supabase.from("encryption_keys").insert({
+        user_id: data.user.id,
+        public_key: publicKey,
+        private_key: privateKey,
+      }).select();
+      console.log("Keys insert:", { data: keyData, error: keyError });
+      if (keyError) throw keyError;
+
+      if (data.session) {
+        localStorage.setItem("token", data.session.access_token);
+        setMessage("Signed up and logged in!");
+        router.push("/messages");
+      } else {
+        setMessage("Signed up! Please log in.");
+        router.push("/login");
+      }
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : "Signup failed";
       setMessage(errorMessage);
@@ -74,9 +126,11 @@ export default function Signup() {
           Sign Up
         </button>
         <p className="mt-4 text-center text-gray-600">
-          Already have an account? <a href="/login" className="text-blue-600 hover:underline">Login</a>
+          {message} Already have an account?{" "}
+          <Link href="/login" className="text-blue-600 hover:underline">
+            Login
+          </Link>
         </p>
-        <p className="mt-2 text-center text-gray-600">{message}</p>
       </div>
     </div>
   );
