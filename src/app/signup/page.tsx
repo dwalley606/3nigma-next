@@ -75,7 +75,7 @@ export default function Signup() {
       if (data.session) {
         localStorage.setItem("token", data.session.access_token);
         setMessage("Signed up and logged in!");
-        router.push("/messages");
+        router.push("/conversations");
       } else {
         setMessage("Signed up! Please log in.");
         router.push("/login");

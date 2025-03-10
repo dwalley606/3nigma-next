@@ -18,7 +18,7 @@ export default function Login() {
       return;
     }
     if (data.session) {
-      router.push("/messages");
+      router.push("/conversations");
     } else {
       setMessage("Login failed: No session returned");
     }
