@@ -1,31 +1,39 @@
-// src/app/api/auth/signup/route.ts
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { hash } from "bcryptjs";
 import pool from "@/lib/db";
+import { generateKeyPairSync } from "crypto"; // For E2EE keys
 
-export async function POST(req: Request) {
-  const { email, password } = await req.json();
+export async function POST(req: NextRequest) {
+  const { username, email, password, phoneNumber } = await req.json();
 
-  // Validate input
-  if (!email || !password) {
-    return NextResponse.json({ error: "Email and password are required" }, { status: 400 });
+  if (!username || !email || !password) {
+    return NextResponse.json({ error: "Username, email, and password are required" }, { status: 400 });
   }
 
-  // Check if user exists
-  const { rows: existingUsers } = await pool.query("SELECT * FROM users WHERE email = $1", [email]);
+  const { rows: existingUsers } = await pool.query(
+    "SELECT * FROM users WHERE email = $1 OR username = $2",
+    [email, username]
+  );
   if (existingUsers.length > 0) {
     return NextResponse.json({ error: "User already exists" }, { status: 409 });
   }
 
-  // Hash password
   const hashedPassword = await hash(password, 10);
+  const { publicKey, privateKey } = generateKeyPairSync("rsa", {
+    modulusLength: 2048,
+    publicKeyEncoding: { type: "spki", format: "pem" },
+    privateKeyEncoding: { type: "pkcs8", format: "pem" },
+  });
 
-  // Insert new user
   const { rows } = await pool.query(
-    "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING id, email",
-    [email, hashedPassword]
+    "INSERT INTO users (username, email, password, phone_number, public_key) VALUES ($1, $2, $3, $4, $5) RETURNING id, username, email",
+    [username, email, hashedPassword, phoneNumber || null, publicKey]
   );
 
-  const user = rows[0];
-  return NextResponse.json({ user: { id: user.id, email: user.email } }, { status: 201 });
+  await pool.query(
+    "INSERT INTO encryption_keys (user_id, public_key, private_key) VALUES ($1, $2, $3)",
+    [rows[0].id, publicKey, privateKey]
+  );
+
+  return NextResponse.json({ user: rows[0] }, { status: 201 });
 }

@@ -16,6 +16,7 @@
     "3nigma-next": "file:",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
+    "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
     "dotenv": "^16.4.7",
     "graphql": "^16.10.0",
