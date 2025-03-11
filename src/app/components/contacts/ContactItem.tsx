@@ -1,6 +1,7 @@
 // components/contacts/ContactItem.tsx
 
 import React from "react";
+import Image from "next/image";
 
 interface Contact {
   username: string;
@@ -10,15 +11,18 @@ interface Contact {
 
 type ContactItemProps = {
   contact: Contact;
+  userId: string;
 };
 
 const ContactItem = ({ contact }: ContactItemProps) => {
   return (
     <li className="flex items-center space-x-4 p-4 border-b border-gray-300">
-      <img
+      <Image
         src={contact.profile_pic_url || "/default-profile-pic.png"}
         alt={contact.username}
-        className="w-12 h-12 rounded-full object-cover"
+        width={48}
+        height={48}
+        className="rounded-full object-cover"
       />
       <div className="flex-1">
         <h3 className="font-semibold">{contact.username}</h3>
