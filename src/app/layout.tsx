@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
-import LogoutButton from './components/auth/LogoutButton';
+// import LogoutButton from './components/auth/LogoutButton';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,7 +43,7 @@ export default function RootLayout({
             <Link href="/signup" className="block py-2 px-4 text-gray-300 font-semibold hover:bg-gray-700 rounded-md mt-2">
               Sign Up
             </Link>
-            <LogoutButton />
+            {/* <LogoutButton /> */}
           </nav>
         </div>
         {/* Main Content */}
