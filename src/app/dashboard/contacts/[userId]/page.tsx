@@ -1,14 +1,15 @@
 // src/app/dashboard/contacts/[userId]/page.tsx
-import { createClient } from '@/app/utils/supabase/server'
-import ContactsSection from '@/components/ContactsSection'
+import { createClient } from '@utils/supabase/server'
+import ContactsSection from '@/components/ContactsSections'
+import { PostgrestError } from '@supabase/supabase-js'
 
-export interface Contact {
+interface Contact {
   id: string
   username: string
   email: string
 }
 
-export interface ContactRequest {
+interface ContactRequest {
   id: string
   from_user_id: string
   status: 'pending' | 'accepted' | 'rejected'
@@ -33,16 +34,22 @@ export default async function Page({ params }: { params: { userId: string } }) {
   console.log('Fetching contacts for userId:', userId)
   const { data: contactsData, error: contactsError } = await supabase
     .from('contacts')
-    .select('users!contact_id(id, username, email)')
-    .eq('user_id', userId)
+    .select('users!contact_id(id, username, email)') as { data: { users: Contact }[], error: PostgrestError | null }
 
   console.log('Raw Contacts Data:', contactsData)
 
   const { data: requestsData, error: requestsError } = await supabase
     .from('contact_requests')
-    .select('id, from_user_id, status, users!from_user_id(username)')
+    .select(`
+      id,
+      from_user_id,
+      status,
+      users:users!from_user_id (
+        username
+      )
+    `)
     .eq('to_user_id', userId)
-    .eq('status', 'pending')
+    .eq('status', 'pending') as unknown as { data: ContactRequest[], error: PostgrestError | null }
 
   console.log('Raw Requests Data:', requestsData)
 
@@ -51,24 +58,13 @@ export default async function Page({ params }: { params: { userId: string } }) {
     return <div className="text-red-400">Error loading contacts: {contactsError?.message || requestsError?.message}</div>
   }
 
-  const contacts = contactsData?.map((c) => ({
-    id: c.users[0].id,
-    username: c.users[0].username,
-    email: c.users[0].email
-  })) || []
-
-  const pendingRequests = requestsData?.map((r) => ({
-    id: r.id,
-    from_user_id: r.from_user_id,
-    status: r.status,
-    users: { username: r.users[0].username }
-  })) || []
+  const contacts: Contact[] = contactsData?.map((c) => c.users) || []
 
   return (
     <div className="p-4">
       <ContactsSection
         contacts={contacts}
-        pendingRequests={pendingRequests}
+        pendingRequests={requestsData || []}
         userId={userId}
       />
     </div>
