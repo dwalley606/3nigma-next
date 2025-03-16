@@ -1,5 +1,14 @@
 // src/app/dashboard/contacts/page.tsx
-import { createClient } from '@/utils/supabase/server'
+import { createClient } from '../../utils/supabase/server'
+import { PostgrestError } from '@supabase/supabase-js'
+
+interface Contact {
+  users: {
+    id: string;
+    username: string;
+    email: string;
+  }
+}
 
 export default async function ContactsPage() {
   const supabase = await createClient()
@@ -11,8 +20,7 @@ export default async function ContactsPage() {
 
   const { data: contacts, error } = await supabase
     .from('contacts')
-    .select('users!contact_id(id, username, email)')
-    .eq('user_id', user.id)
+    .select('users!contact_id(id, username, email)') as { data: Contact[], error: PostgrestError | null }
 
   if (error) {
     console.error('Error fetching contacts:', error)

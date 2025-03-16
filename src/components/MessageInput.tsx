@@ -1,7 +1,7 @@
 // src/components/MessageInput.tsx
 'use client'
 import { useState } from 'react'
-import { createClient } from '@/utils/supabase/client'
+import { createClient } from '@/app/utils/supabase/client'
 
 interface MessageInputProps {
   conversationId: string

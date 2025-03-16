@@ -1,7 +1,7 @@
 // src/components/ContactRequestItem.tsx
 'use client'
 import { useState } from 'react'
-import { createClient } from '@/utils/supabase/client'
+import { createClient } from '@/app/utils/supabase/client'
 
 interface ContactRequest {
   id: string

@@ -1,32 +1,35 @@
-// src/app/dashboard/conversations/page.tsx
-import { createClient } from '@/utils/supabase/server'
+import { createClient } from '@/app/utils/supabase/server';
+import Link from 'next/link';
 
 export default async function ConversationsPage() {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  if (!user) {
-    return <div>Please log in.</div>
-  }
-
+  const supabase = await createClient();
   const { data: conversations, error } = await supabase
     .from('conversations')
-    .select('id, name, last_message_id')
-    .eq('user_id', user.id) // Adjust based on your schema
+    .select('id, user, group, last_message, timestamp')
+    .limit(10);
 
   if (error) {
-    console.error('Error fetching conversations:', error)
-    return <div>Error loading conversations</div>
+    return <div className="p-6 text-red-500">Error: {error.message}</div>;
   }
 
   return (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Conversations</h2>
-      <ul>
-        {conversations.map((conv) => (
-          <li key={conv.id}>{conv.name || `Conv ${conv.id}`}</li>
-        ))}
-      </ul>
+    <div className="p-6">
+      <h1 className="text-2xl font-semibold text-gray-100 mb-4">Conversations</h1>
+      {conversations?.length ? (
+        <div className="space-y-4">
+          {conversations.map((conv) => (
+            <Link key={conv.id} href={`/dashboard/conversations/${conv.id}`} className="block">
+              <div className="bg-gray-700 p-4 rounded-lg hover:bg-gray-600 transition">
+                <p className="text-gray-300">{conv.group || conv.user}</p>
+                <p className="text-gray-400 text-sm">{conv.last_message}</p>
+                <p className="text-gray-500 text-xs">{new Date(conv.timestamp).toLocaleString()}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      ) : (
+        <p className="text-gray-400">No conversations found.</p>
+      )}
     </div>
-  )
+  );
 }

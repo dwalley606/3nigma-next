@@ -1,34 +1,39 @@
-// src/app/dashboard/layout.tsx
-import { createClient } from '@/utils/supabase/server'
-import { redirect } from 'next/navigation'
-import ConversationList from '@/components/ConversationList'
+import Link from 'next/link';
 
-export default async function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  if (!user) {
-    redirect('/login')
-  }
-
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex h-screen bg-gray-900 text-gray-100">
-      {/* Desktop: Sidebar for Conversation List */}
-      <div className="hidden md:block w-1/4 bg-gray-800 p-4 overflow-y-auto border-r border-gray-700">
-        <ConversationList userId={user.id} />
+    <>
+      <div className="w-1/4 bg-gray-800 shadow-lg p-4 overflow-y-auto">
+        <h2 className="text-xl font-semibold mb-4 text-gray-100">3nigma</h2>
+        <nav>
+          <Link
+            href="/dashboard/conversations"
+            className="block py-2 px-4 text-gray-300 font-semibold hover:bg-gray-700 rounded-md"
+          >
+            Conversations
+          </Link>
+          <Link
+            href="/dashboard/contacts"
+            className="block py-2 px-4 text-gray-300 font-semibold hover:bg-gray-700 rounded-md mt-2"
+          >
+            Contacts
+          </Link>
+          <Link
+            href="/dashboard/login"
+            className="block py-2 px-4 text-gray-300 font-semibold hover:bg-gray-700 rounded-md mt-2"
+          >
+            Login
+          </Link>
+          <Link
+            href="/dashboard/signup"
+            className="block py-2 px-4 text-gray-300 font-semibold hover:bg-gray-700 rounded-md mt-2"
+          >
+            Sign Up
+          </Link>
+          {/* LogoutButton will be added once auth is integrated */}
+        </nav>
       </div>
-
-      {/* Mobile: Full-width Conversation List (toggleable) */}
-      <div className="md:hidden w-full p-4">
-        <ConversationList userId={user.id} />
-      </div>
-
-      {/* Chat Area */}
-      <div className="flex-1 flex flex-col">{children}</div>
-    </div>
-  )
+      <div className="flex-1 p-6 bg-gray-800 text-gray-100">{children}</div>
+    </>
+  );
 }

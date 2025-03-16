@@ -1,7 +1,7 @@
 // src/app/dashboard/conversations/[conversationId]/MessageInput.tsx
 'use client'
 import { useState } from 'react'
-import { createClient } from '@/utils/supabase/client'
+import { createClient } from '@/app/utils/supabase/client'
 
 export default function MessageInput({ conversationId }: { conversationId: string }) {
   const [message, setMessage] = useState('')
