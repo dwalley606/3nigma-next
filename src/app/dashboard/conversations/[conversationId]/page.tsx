@@ -2,15 +2,6 @@
 import { createClient } from '@/app/utils/supabase/server'
 import ChatDisplay from '@/components/ChatDisplay'
 import MessageInput from '@/components/MessageInput'
-import { PostgrestError } from '@supabase/supabase-js'
-
-interface Message {
-  id: string
-  content: string
-  sender_id: string
-  timestamp: string
-  sender?: { username: string }
-}
 
 export default async function ChatPage({
   params,
@@ -26,7 +17,9 @@ export default async function ChatPage({
 
   const { data: messages, error } = await supabase
     .from('messages')
-    .select('*, sender:users!sender_id(username)') as { data: Message[], error: PostgrestError | null }
+    .select('*, sender:users!sender_id(username)')
+    .eq('conversation_id', params.conversationId)
+    .order('timestamp', { ascending: true })
 
   if (error) {
     console.error('Error fetching messages:', error)

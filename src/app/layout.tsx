@@ -5,17 +5,17 @@ import '@/app/globals.css';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
-});
+})
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
-});
+})
 
 export const metadata: Metadata = {
   title: '3nigma - Secure Messaging',
   description: 'An end-to-end encrypted messaging app built with Next.js and Supabase',
-};
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -24,5 +24,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="w-full max-w-7xl flex-1">{children}</div>
       </body>
     </html>
-  );
+  )
 }
