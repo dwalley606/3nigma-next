@@ -28,11 +28,9 @@ export default function SignupPage() {
         throw new Error('Username is required');
       }
 
-      // Mock key pair generation (replace with real implementation later)
-      const publicKey = `mock-public-key-${username}`; // Placeholder
-      const privateKey = `mock-private-key-${username}`; // Placeholder
+      const publicKey = `mock-public-key-${username}`;
+      const privateKey = `mock-private-key-${username}`;
 
-      // Sign up with Supabase Auth
       const { data, error } = await supabase.auth.signUp({
         email: trimmedEmail,
         password,
@@ -44,7 +42,6 @@ export default function SignupPage() {
       if (error) throw error;
       if (!data.user) throw new Error('Signup failed: No user returned');
 
-      // Insert into users table
       const { error: userError } = await supabase.from('users').insert({
         id: data.user.id,
         username,
@@ -55,7 +52,6 @@ export default function SignupPage() {
 
       if (userError) throw userError;
 
-      // Insert into encryption_keys table
       const { error: keyError } = await supabase.from('encryption_keys').insert({
         user_id: data.user.id,
         public_key: publicKey,
