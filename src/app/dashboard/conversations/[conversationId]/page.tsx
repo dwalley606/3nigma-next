@@ -1,5 +1,5 @@
 // src/app/dashboard/conversations/[conversationId]/page.tsx
-import { createClient } from '@/app/utils/supabase/server'
+import { supabaseServer } from '@/app/utils/supabase/server';
 import ChatDisplay from '@/components/ChatDisplay'
 import MessageInput from '@/components/MessageInput'
 
@@ -8,14 +8,13 @@ export default async function ChatPage({
 }: {
   params: { conversationId: string }
 }) {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await supabaseServer.auth.getUser()
 
   if (!user) {
     return <div>Please log in.</div>
   }
 
-  const { data: messages, error } = await supabase
+  const { data: messages, error } = await supabaseServer
     .from('messages')
     .select('*, sender:users!sender_id(username)')
     .eq('conversation_id', params.conversationId)

@@ -1,7 +1,7 @@
 // src/components/ChatDisplay.tsx
 'use client'
 import { useEffect, useState } from 'react'
-import { createClient } from '@/app/utils/supabase/client'
+import { supabase } from '@/app/utils/supabase/client'
 
 interface Message {
   id: string
@@ -23,7 +23,6 @@ export default function ChatDisplay({
   currentUserId,
 }: ChatDisplayProps) {
   const [messages, setMessages] = useState<Message[]>(initialMessages)
-  const supabase = createClient()
 
   useEffect(() => {
     const subscription = supabase

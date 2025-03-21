@@ -1,5 +1,5 @@
 // src/app/dashboard/layout.tsx
-import { createClient } from '@/app/utils/supabase/server'
+import { supabaseServer } from '@/app/utils/supabase/server';
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import ConversationList from '@/components/ConversationList'
@@ -9,8 +9,7 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode
 }) {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await supabaseServer.auth.getUser()
 
   if (!user) {
     redirect('/dashboard/login')

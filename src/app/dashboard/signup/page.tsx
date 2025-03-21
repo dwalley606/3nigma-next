@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { createClient } from '@/app/utils/supabase/client';
+import { supabase } from '@/app/utils/supabase/client';
 import Link from 'next/link';
 
 export default function SignupPage() {
@@ -12,7 +12,6 @@ export default function SignupPage() {
   const [phoneNumber, setPhoneNumber] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const router = useRouter();
-  const supabase = createClient();
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();

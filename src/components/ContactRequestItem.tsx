@@ -1,7 +1,7 @@
 // src/components/ContactRequestItem.tsx
 'use client'
 import { useState } from 'react'
-import { createClient } from '@/app/utils/supabase/client'
+import { supabase } from '@/app/utils/supabase/client'
 
 interface ContactRequest {
   id: string
@@ -17,7 +17,6 @@ interface ContactRequestItemProps {
 
 export default function ContactRequestItem({ request, userId }: ContactRequestItemProps) {
   const [status, setStatus] = useState(request.status)
-  const supabase = createClient()
 
   const handleAccept = async () => {
     const { error: updateError } = await supabase

@@ -1,5 +1,5 @@
 // src/app/dashboard/contacts/[userId]/page.tsx
-import { createClient } from '@utils/supabase/server'
+import { supabaseServer } from '@/app/utils/supabase/server';
 import ContactsSection from '@/components/ContactsSections'
 import { PostgrestError } from '@supabase/supabase-js'
 
@@ -23,8 +23,7 @@ export default async function Page({ params }: { params: { userId: string } }) {
     return <div className="p-4 text-red-400">Invalid user ID. Please log in.</div>
   }
 
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await supabaseServer.auth.getUser()
   console.log('Authenticated user:', user)
 
   if (!user || user.id !== userId) {
@@ -32,13 +31,13 @@ export default async function Page({ params }: { params: { userId: string } }) {
   }
 
   console.log('Fetching contacts for userId:', userId)
-  const { data: contactsData, error: contactsError } = await supabase
+  const { data: contactsData, error: contactsError } = await supabaseServer
     .from('contacts')
     .select('users!contact_id(id, username, email)') as { data: { users: Contact }[], error: PostgrestError | null }
 
   console.log('Raw Contacts Data:', contactsData)
 
-  const { data: requestsData, error: requestsError } = await supabase
+  const { data: requestsData, error: requestsError } = await supabaseServer
     .from('contact_requests')
     .select(`
       id,
