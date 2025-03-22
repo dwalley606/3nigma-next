@@ -1,60 +1,89 @@
-// Utility functions for Web Crypto API
-function arrayBufferToBase64(buffer: ArrayBuffer): string {
-  return btoa(String.fromCharCode(...new Uint8Array(buffer)));
-}
-
-function base64ToArrayBuffer(base64: string): ArrayBuffer {
-  const binary = atob(base64);
-  const len = binary.length;
-  const bytes = new Uint8Array(len);
-  for (let i = 0; i < len; i++) bytes[i] = binary.charCodeAt(i);
-  return bytes.buffer;
-}
-
-export async function generateKeyPair(): Promise<{ publicKey: string; privateKey: string }> {
-  const subtle = window.crypto.subtle; // Explicit global crypto
-  const keyPair = await subtle.generateKey(
+export async function generateKeyPair() {
+  const keyPair = await window.crypto.subtle.generateKey(
     {
-      name: "RSA-OAEP",
+      name: 'RSA-OAEP',
       modulusLength: 2048,
-      publicExponent: new Uint8Array([1, 0, 1]), // 65537
-      hash: "SHA-256",
+      publicExponent: new Uint8Array([1, 0, 1]),
+      hash: 'SHA-256',
     },
-    true, // Extractable
-    ["encrypt", "decrypt"]
+    true,
+    ['encrypt', 'decrypt']
   );
-
-  const publicKey = await subtle.exportKey("spki", keyPair.publicKey);
-  const privateKey = await subtle.exportKey("pkcs8", keyPair.privateKey);
-
+  const publicKey = await window.crypto.subtle.exportKey('spki', keyPair.publicKey);
+  const privateKey = await window.crypto.subtle.exportKey('pkcs8', keyPair.privateKey);
   return {
-    publicKey: arrayBufferToBase64(publicKey),
-    privateKey: arrayBufferToBase64(privateKey),
+    publicKey: Buffer.from(publicKey).toString('base64'),
+    privateKey: Buffer.from(privateKey).toString('base64'),
   };
 }
 
-export async function encryptMessage(message: string, publicKeyBase64: string): Promise<string> {
-  const publicKey = await window.crypto.subtle.importKey(
-    "spki",
-    base64ToArrayBuffer(publicKeyBase64),
-    { name: "RSA-OAEP", hash: "SHA-256" },
-    false,
-    ["encrypt"]
+export async function encryptMessage(message: string, publicKey: string) {
+  const symmetricKey = await window.crypto.subtle.generateKey(
+    { name: 'AES-GCM', length: 256 },
+    true,
+    ['encrypt', 'decrypt']
   );
-  const encoded = new TextEncoder().encode(message);
-  const encrypted = await window.crypto.subtle.encrypt({ name: "RSA-OAEP" }, publicKey, encoded);
-  return arrayBufferToBase64(encrypted);
+  const iv = window.crypto.getRandomValues(new Uint8Array(12));
+  const encodedMessage = new TextEncoder().encode(message);
+  const encryptedMessage = await window.crypto.subtle.encrypt(
+    { name: 'AES-GCM', iv },
+    symmetricKey,
+    encodedMessage
+  );
+
+  const publicKeyBuffer = Buffer.from(publicKey, 'base64');
+  const importedPublicKey = await window.crypto.subtle.importKey(
+    'spki',
+    publicKeyBuffer,
+    { name: 'RSA-OAEP', hash: 'SHA-256' },
+    false,
+    ['encrypt']
+  );
+  const exportedSymmetricKey = await window.crypto.subtle.exportKey('raw', symmetricKey);
+  const encryptedSymmetricKey = await window.crypto.subtle.encrypt(
+    { name: 'RSA-OAEP' },
+    importedPublicKey,
+    exportedSymmetricKey
+  );
+
+  return {
+    content: Buffer.from(encryptedMessage).toString('base64'),
+    contentKey: Buffer.from(encryptedSymmetricKey).toString('base64'),
+    iv: Buffer.from(iv).toString('base64'),
+  };
 }
 
-export async function decryptMessage(encryptedBase64: string, privateKeyBase64: string): Promise<string> {
-  const privateKey = await window.crypto.subtle.importKey(
-    "pkcs8",
-    base64ToArrayBuffer(privateKeyBase64),
-    { name: "RSA-OAEP", hash: "SHA-256" },
+export async function decryptMessage(encryptedMessage: string, encryptedKey: string, iv: string, privateKey: string) {
+  const privateKeyBuffer = Buffer.from(privateKey, 'base64');
+  const importedPrivateKey = await window.crypto.subtle.importKey(
+    'pkcs8',
+    privateKeyBuffer,
+    { name: 'RSA-OAEP', hash: 'SHA-256' },
     false,
-    ["decrypt"]
+    ['decrypt']
   );
-  const encrypted = base64ToArrayBuffer(encryptedBase64);
-  const decrypted = await window.crypto.subtle.decrypt({ name: "RSA-OAEP" }, privateKey, encrypted);
-  return new TextDecoder().decode(decrypted);
+
+  const encryptedKeyBuffer = Buffer.from(encryptedKey, 'base64');
+  const symmetricKeyBuffer = await window.crypto.subtle.decrypt(
+    { name: 'RSA-OAEP' },
+    importedPrivateKey,
+    encryptedKeyBuffer
+  );
+  const symmetricKey = await window.crypto.subtle.importKey(
+    'raw',
+    symmetricKeyBuffer,
+    { name: 'AES-GCM' },
+    false,
+    ['decrypt']
+  );
+
+  const ivBuffer = Buffer.from(iv, 'base64');
+  const encryptedMessageBuffer = Buffer.from(encryptedMessage, 'base64');
+  const decryptedMessage = await window.crypto.subtle.decrypt(
+    { name: 'AES-GCM', iv: ivBuffer },
+    symmetricKey,
+    encryptedMessageBuffer
+  );
+
+  return new TextDecoder().decode(decryptedMessage);
 }

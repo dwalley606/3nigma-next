@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/app/utils/supabase/client';
+import { useAuth } from '@/context/AuthContext';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -10,18 +11,12 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
-  const [isRedirecting, setIsRedirecting] = useState(false);
+  const { session } = useAuth();
 
-  useEffect(() => {
-    const checkSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session && !isRedirecting) {
-        setIsRedirecting(true);
-        router.push('/dashboard');
-      }
-    };
-    checkSession();
-  }, [router, isRedirecting]);
+  // Middleware handles redirect if already logged in
+  if (session) {
+    return null; // Render nothing; middleware will redirect
+  }
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,8 +30,6 @@ export default function Login() {
         password,
       });
       if (error) throw error;
-      setIsRedirecting(true);
-      router.push('/dashboard');
     } catch (err: any) {
       setError(err.message);
     } finally {

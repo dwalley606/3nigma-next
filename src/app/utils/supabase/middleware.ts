@@ -1,42 +1,23 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-import { createServerClient, type CookieOptions } from '@supabase/ssr';
+import { createServerClient, type CookieMethodsServer } from '@supabase/ssr';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function middleware(request: NextRequest) {
-  let response = NextResponse.next();
+export async function createClient(request: NextRequest) {
+  const response = NextResponse.next();
+  
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
-        get(name: string) {
-          return request.cookies.get(name)?.value;
+        getAll: () => request.cookies.getAll(),
+        setAll: (cookies) => {
+          cookies.forEach(({ name, value, options }) => {
+            response.cookies.set({ name, value, ...options });
+          });
         },
-        set(name: string, value: string, options: CookieOptions) {
-          response.cookies.set({ name, value, ...options });
-        },
-        remove(name: string, options: CookieOptions) {
-          response.cookies.set({ name, value: '', ...options, maxAge: 0 });
-        },
-      },
+      } as CookieMethodsServer,
     }
   );
 
-  const { data: { session } } = await supabase.auth.getSession();
-
-  // If no session and trying to access a protected route, redirect to login
-  if (!session && request.nextUrl.pathname.startsWith('/dashboard') && request.nextUrl.pathname !== '/dashboard/login') {
-    return NextResponse.redirect(new URL('/dashboard/login', request.url));
-  }
-
-  // If session exists and on login page, redirect to dashboard
-  if (session && request.nextUrl.pathname === '/dashboard/login') {
-    return NextResponse.redirect(new URL('/dashboard', request.url));
-  }
-
-  return response;
+  return { supabase, response };
 }
-
-export const config = {
-  matcher: ['/dashboard/:path*'],
-};

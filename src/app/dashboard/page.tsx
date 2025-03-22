@@ -1,41 +1,20 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/app/utils/supabase/client';
 
 export default function Dashboard() {
-  const [loading, setLoading] = useState(true);
+  const { session, loading } = useAuth();
   const router = useRouter();
 
-  useEffect(() => {
-    const checkSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) {
-        router.push('/dashboard/login');
-      }
-      setLoading(false);
-    };
-
-    checkSession();
-
-    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === 'SIGNED_OUT') {
-        router.push('/dashboard/login');
-      }
-    });
-
-    return () => {
-      authListener.subscription.unsubscribe();
-    };
-  }, [router]);
+  // Middleware handles redirect if not logged in
+  if (loading) return <p>Loading...</p>;
+  if (!session) return null; // Render nothing; middleware will redirect
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    router.push('/dashboard/login');
   };
-
-  if (loading) return <p>Loading...</p>;
 
   return (
     <div>

@@ -1,36 +1,45 @@
-// src/app/dashboard/conversations/[conversationId]/MessageInput.tsx
-'use client'
-import { useState } from 'react'
+"use client";
+
+import { useState } from 'react';
 import { supabase } from '@/app/utils/supabase/client';
 
 export default function MessageInput({ conversationId }: { conversationId: string }) {
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    const { error } = await supabase
-      .from('messages')
-      .insert({
-        content: message,
-        conversation_id: conversationId,
-        sender_id: (await supabase.auth.getUser()).data.user?.id,
-        timestamp: new Date().toISOString(),
-      })
-    if (error) console.error('Error sending message:', error)
-    setMessage('')
-  }
+  const handleSend = async () => {
+    if (!message.trim()) return;
+
+    // Fetch the recipient (simplified for 1:1; for groups, fetch all participants)
+    const { data: participants } = await supabase
+      .from('conversation_participants')
+      .select('user_id')
+      .eq('conversation_id', conversationId)
+      .neq('user_id', (await supabase.auth.getUser()).data.user?.id);
+
+    if (participants?.length) {
+      const recipientId = participants[0].user_id;
+
+      const res = await fetch('/api/messages/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ conversationId, content: message, recipientId }),
+      });
+
+      if (res.ok) {
+        setMessage('');
+      }
+    }
+  };
 
   return (
-    <form onSubmit={handleSubmit} className="mt-4">
+    <div>
       <input
         type="text"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="w-full p-2 bg-gray-700 rounded"
+        placeholder="Type a message..."
       />
-      <button type="submit" className="mt-2 p-2 bg-blue-600 rounded">
-        Send
-      </button>
-    </form>
-  )
+      <button onClick={handleSend}>Send</button>
+    </div>
+  );
 }

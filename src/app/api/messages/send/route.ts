@@ -1,31 +1,43 @@
-// src/app/api/messages/send/route.ts
-import { NextRequest, NextResponse } from "next/server";
-import { verify } from "jsonwebtoken";
-import pool from "@/lib/db";
+import { NextRequest, NextResponse } from 'next/server';
+import { supabaseServer } from '@/app/utils/supabase/server';
+import { encryptMessage } from '@/lib/crypto';
 
 export async function POST(req: NextRequest) {
-  const token = req.headers.get("Authorization")?.replace("Bearer ", "");
-  if (!token) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  let senderId;
   try {
-    const decoded = verify(token, process.env.JWT_SECRET || "secret") as { id: string };
-    senderId = decoded.id;
-  } catch {
-    return NextResponse.json({ error: "Invalid token" }, { status: 401 });
+    const { conversationId, content, recipientId } = await req.json();
+
+    // Get the recipient's public key
+    const { data: recipient, error: recipientError } = await supabaseServer
+      .from('users')
+      .select('public_key')
+      .eq('id', recipientId)
+      .single();
+
+    if (recipientError || !recipient) {
+      return NextResponse.json({ error: 'Recipient not found' }, { status: 404 });
+    }
+
+    // Encrypt the message
+    const { content: encryptedContent, contentKey, iv } = await encryptMessage(content, recipient.public_key);
+
+    // Store the message
+    const { data, error } = await supabaseServer
+      .from('messages')
+      .insert({
+        conversation_id: conversationId,
+        sender_id: (await supabaseServer.auth.getUser()).data.user?.id,
+        content: encryptedContent,
+        content_key: contentKey,
+        iv,
+        created_at: new Date().toISOString(),
+      })
+      .select()
+      .single();
+
+    if (error) throw error;
+
+    return NextResponse.json(data);
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
-
-  const { recipient_id, encrypted_content } = await req.json();
-  if (!recipient_id || !encrypted_content) {
-    return NextResponse.json({ error: "Recipient ID and message required" }, { status: 400 });
-  }
-
-  const { rows } = await pool.query(
-    "INSERT INTO messages (sender_id, recipient_id, encrypted_content) VALUES ($1, $2, $3) RETURNING *",
-    [senderId, recipient_id, encrypted_content]
-  );
-
-  return NextResponse.json(rows[0], { status: 201 });
 }
