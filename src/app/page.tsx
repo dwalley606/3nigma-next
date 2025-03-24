@@ -36,12 +36,12 @@ export default function Home() {
         </p>
       </div>
       <div className="flex gap-4">
-        <Link href="/dashboard/signup">
+        <Link href="/auth?mode=signup">
           <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors">
             Sign Up
           </button>
         </Link>
-        <Link href="/dashboard/login">
+        <Link href="/auth?mode=login">
           <button className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-md hover:bg-gray-700 transition-colors">
             Login
           </button>

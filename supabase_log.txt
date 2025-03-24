@@ -1,0 +1,1068 @@
+Supabase CLI 2.19.7
+[?25l2025/03/23 23:14:18 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:18 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:18 Send Done
+2025/03/23 23:14:18 Recv First Byte
+2025/03/23 23:14:18 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:18 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:18 Send Done
+⣽ Starting database from backup...[0D2025/03/23 23:14:18 Recv First Byte
+2025/03/23 23:14:18 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:18 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:18 Sent Header: Content-Length [274]
+2025/03/23 23:14:18 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:18 Send Done
+[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D2025/03/23 23:14:19 Recv First Byte
+2025/03/23 23:14:19 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:19 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:19 Sent Header: Content-Length [130]
+2025/03/23 23:14:19 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:19 Send Done
+2025/03/23 23:14:19 Recv First Byte
+2025/03/23 23:14:19 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:19 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:19 Sent Header: Content-Length [134]
+2025/03/23 23:14:19 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:19 Send Done
+2025/03/23 23:14:19 Recv First Byte
+2025/03/23 23:14:19 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:19 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:19 Sent Header: Content-Length [12814]
+2025/03/23 23:14:19 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:19 Send Done
+[0D[2K⡿ Starting database from backup...[0D2025/03/23 23:14:19 Recv First Byte
+2025/03/23 23:14:19 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:19 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:19 Sent Header: Content-Length [0]
+2025/03/23 23:14:19 Send Done
+[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D2025/03/23 23:14:19 Recv First Byte
+2025/03/23 23:14:19 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:19 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:19 Send Done
+2025/03/23 23:14:19 Recv First Byte
+[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D2025/03/23 23:14:20 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:20 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:20 Send Done
+2025/03/23 23:14:20 Recv First Byte
+[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D2025/03/23 23:14:21 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:21 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:21 Send Done
+2025/03/23 23:14:21 Recv First Byte
+[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D2025/03/23 23:14:22 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:22 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:22 Send Done
+2025/03/23 23:14:22 Recv First Byte
+[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D2025/03/23 23:14:23 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:23 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:23 Send Done
+2025/03/23 23:14:23 Recv First Byte
+[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D2025/03/23 23:14:24 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:24 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:24 Send Done
+2025/03/23 23:14:24 Recv First Byte
+[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D2025/03/23 23:14:25 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:25 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:25 Send Done
+2025/03/23 23:14:25 Recv First Byte
+[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D2025/03/23 23:14:26 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:26 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:26 Send Done
+2025/03/23 23:14:26 Recv First Byte
+[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D2025/03/23 23:14:27 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:27 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:27 Send Done
+2025/03/23 23:14:27 Recv First Byte
+[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D2025/03/23 23:14:28 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:28 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:28 Send Done
+2025/03/23 23:14:28 Recv First Byte
+[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D[0D[2K⡿ Starting database from backup...[0D[0D[2K⣟ Starting database from backup...[0D[0D[2K⣯ Starting database from backup...[0D[0D[2K⣷ Starting database from backup...[0D[0D[2K⣾ Starting database from backup...[0D[0D[2K⣽ Starting database from backup...[0D[0D[2K⣻ Starting database from backup...[0D[0D[2K⢿ Starting database from backup...[0D2025/03/23 23:14:29 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:29 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:29 Send Done
+2025/03/23 23:14:29 Recv First Byte
+2025/03/23 23:14:29 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:29 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:29 Send Done
+[0D[2K⢿ Starting containers...[0D2025/03/23 23:14:29 Recv First Byte
+2025/03/23 23:14:29 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:29 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:29 Sent Header: Content-Length [274]
+2025/03/23 23:14:29 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:29 Send Done
+2025/03/23 23:14:29 Recv First Byte
+2025/03/23 23:14:29 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:29 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:29 Sent Header: Content-Length [2911]
+2025/03/23 23:14:29 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:29 Send Done
+[0D[2K⡿ Starting containers...[0D2025/03/23 23:14:29 Recv First Byte
+2025/03/23 23:14:29 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:29 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:29 Sent Header: Content-Length [0]
+2025/03/23 23:14:29 Send Done
+[0D[2K⣟ Starting containers...[0D[0D[2K⣯ Starting containers...[0D[0D[2K⣷ Starting containers...[0D2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Send Done
+2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [274]
+2025/03/23 23:14:30 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:30 Send Done
+2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [9734]
+2025/03/23 23:14:30 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:30 Send Done
+[0D[2K⣾ Starting containers...[0D2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [0]
+2025/03/23 23:14:30 Send Done
+[0D[2K⣽ Starting containers...[0D[0D[2K⣻ Starting containers...[0D[0D[2K⢿ Starting containers...[0D2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Send Done
+2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [274]
+2025/03/23 23:14:30 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:30 Send Done
+2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [13721]
+2025/03/23 23:14:30 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:30 Send Done
+[0D[2K⡿ Starting containers...[0D2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [0]
+2025/03/23 23:14:30 Send Done
+[0D[2K⣟ Starting containers...[0D[0D[2K⣯ Starting containers...[0D[0D[2K⣷ Starting containers...[0D2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Send Done
+2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [274]
+2025/03/23 23:14:30 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:30 Send Done
+2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [4746]
+2025/03/23 23:14:30 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:30 Send Done
+[0D[2K⣾ Starting containers...[0D2025/03/23 23:14:30 Recv First Byte
+2025/03/23 23:14:30 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:30 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:30 Sent Header: Content-Length [0]
+2025/03/23 23:14:30 Send Done
+[0D[2K⣽ Starting containers...[0D[0D[2K⣻ Starting containers...[0D[0D[2K⢿ Starting containers...[0D2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Send Done
+2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Sent Header: Content-Length [274]
+2025/03/23 23:14:31 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:31 Send Done
+2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Sent Header: Content-Length [2005]
+2025/03/23 23:14:31 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:31 Send Done
+[0D[2K⡿ Starting containers...[0D2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Sent Header: Content-Length [0]
+2025/03/23 23:14:31 Send Done
+[0D[2K⣟ Starting containers...[0D[0D[2K⣯ Starting containers...[0D[0D[2K⣷ Starting containers...[0D[0D[2K⣾ Starting containers...[0D2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Send Done
+2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Sent Header: Content-Length [274]
+2025/03/23 23:14:31 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:31 Send Done
+2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Sent Header: Content-Length [2921]
+2025/03/23 23:14:31 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:31 Send Done
+[0D[2K⣽ Starting containers...[0D2025/03/23 23:14:31 Recv First Byte
+2025/03/23 23:14:31 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:31 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:31 Sent Header: Content-Length [0]
+2025/03/23 23:14:31 Send Done
+[0D[2K⣻ Starting containers...[0D[0D[2K⢿ Starting containers...[0D[0D[2K⡿ Starting containers...[0D2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [274]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [2351]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+[0D[2K⣟ Starting containers...[0D2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [0]
+2025/03/23 23:14:32 Send Done
+[0D[2K⣯ Starting containers...[0D[0D[2K⣷ Starting containers...[0D[0D[2K⣾ Starting containers...[0D2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [274]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [135]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [3400]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+[0D[2K⣽ Starting containers...[0D2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [0]
+2025/03/23 23:14:32 Send Done
+[0D[2K⣻ Starting containers...[0D[0D[2K⢿ Starting containers...[0D[0D[2K⡿ Starting containers...[0D2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [274]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+2025/03/23 23:14:32 Recv First Byte
+2025/03/23 23:14:32 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:32 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:32 Sent Header: Content-Length [10722]
+2025/03/23 23:14:32 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:32 Send Done
+[0D[2K⣟ Starting containers...[0D2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [0]
+2025/03/23 23:14:33 Send Done
+[0D[2K⣯ Starting containers...[0D[0D[2K⣷ Starting containers...[0D[0D[2K⣾ Starting containers...[0D2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Send Done
+2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [274]
+2025/03/23 23:14:33 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:33 Send Done
+2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [2340]
+2025/03/23 23:14:33 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:33 Send Done
+[0D[2K⣽ Starting containers...[0D2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [0]
+2025/03/23 23:14:33 Send Done
+[0D[2K⣻ Starting containers...[0D[0D[2K⢿ Starting containers...[0D[0D[2K⡿ Starting containers...[0D2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Send Done
+2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [274]
+2025/03/23 23:14:33 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:33 Send Done
+2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [3068]
+2025/03/23 23:14:33 Sent Header: Content-Type [application/json]
+2025/03/23 23:14:33 Send Done
+[0D[2K⣟ Starting containers...[0D[0D[2K⣯ Starting containers...[0D2025/03/23 23:14:33 Recv First Byte
+2025/03/23 23:14:33 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:33 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:33 Sent Header: Content-Length [0]
+2025/03/23 23:14:33 Send Done
+[0D[2K⣷ Starting containers...[0D[0D[2K⣾ Starting containers...[0D[0D[2K⣽ Starting containers...[0D2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+[0D[2K⣽ Waiting for health checks...[0D2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+[0D[2K⣻ Waiting for health checks...[0D2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Connect Start: tcp 127.0.0.1:54321
+2025/03/23 23:14:34 Connect Done: tcp 127.0.0.1:54321
+2025/03/23 23:14:34 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:34 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:34 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:34 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:34 Send Done
+2025/03/23 23:14:34 Recv First Byte
+2025/03/23 23:14:34 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:34 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:34 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:34 Send Done
+[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+[0D[2K⡿ Waiting for health checks...[0D2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:42 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:42 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+2025/03/23 23:14:42 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:42 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:42 Send Done
+2025/03/23 23:14:42 Recv First Byte
+[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D2025/03/23 23:14:43 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:43 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:43 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:43 Send Done
+2025/03/23 23:14:43 Recv First Byte
+2025/03/23 23:14:43 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:43 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:43 Send Done
+2025/03/23 23:14:43 Recv First Byte
+2025/03/23 23:14:43 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:43 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:43 Send Done
+2025/03/23 23:14:43 Recv First Byte
+[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D2025/03/23 23:14:44 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:44 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:44 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:44 Send Done
+[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D2025/03/23 23:14:46 Recv First Byte
+2025/03/23 23:14:46 Sent Header: Host [api.moby.localhost]
+2025/03/23 23:14:46 Sent Header: User-Agent [Docker-Client/unknown-version (linux)]
+2025/03/23 23:14:46 Send Done
+2025/03/23 23:14:46 Recv First Byte
+[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D2025/03/23 23:14:47 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:47 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:47 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:47 Send Done
+2025/03/23 23:14:47 Recv First Byte
+[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D2025/03/23 23:14:48 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:48 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:48 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:48 Send Done
+[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D2025/03/23 23:14:50 Recv First Byte
+[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D2025/03/23 23:14:51 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:51 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:51 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:51 Send Done
+2025/03/23 23:14:51 Recv First Byte
+[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D2025/03/23 23:14:52 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:52 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:52 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:52 Send Done
+2025/03/23 23:14:52 Recv First Byte
+[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D2025/03/23 23:14:53 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:53 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:53 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:53 Send Done
+2025/03/23 23:14:53 Recv First Byte
+[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D2025/03/23 23:14:54 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:54 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:54 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:54 Send Done
+2025/03/23 23:14:54 Recv First Byte
+[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D2025/03/23 23:14:55 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:55 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:55 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:55 Send Done
+2025/03/23 23:14:55 Recv First Byte
+[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D2025/03/23 23:14:56 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:56 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:56 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:56 Send Done
+2025/03/23 23:14:56 Recv First Byte
+[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D2025/03/23 23:14:57 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:57 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:57 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:57 Send Done
+2025/03/23 23:14:57 Recv First Byte
+[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D2025/03/23 23:14:58 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:58 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:58 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:58 Send Done
+2025/03/23 23:14:58 Recv First Byte
+[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D2025/03/23 23:14:59 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:14:59 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:14:59 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:14:59 Send Done
+2025/03/23 23:14:59 Recv First Byte
+[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D2025/03/23 23:15:00 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:00 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:00 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:00 Send Done
+2025/03/23 23:15:00 Recv First Byte
+[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D2025/03/23 23:15:01 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:01 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:01 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:01 Send Done
+2025/03/23 23:15:01 Recv First Byte
+[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D2025/03/23 23:15:02 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:02 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:02 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:02 Send Done
+2025/03/23 23:15:02 Recv First Byte
+[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D2025/03/23 23:15:03 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:03 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:03 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:03 Send Done
+2025/03/23 23:15:03 Recv First Byte
+[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D2025/03/23 23:15:04 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:04 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:04 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:04 Send Done
+2025/03/23 23:15:04 Recv First Byte
+[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D2025/03/23 23:15:05 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:05 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:05 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:05 Send Done
+2025/03/23 23:15:05 Recv First Byte
+[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D2025/03/23 23:15:06 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:06 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:06 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:06 Send Done
+2025/03/23 23:15:06 Recv First Byte
+[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D2025/03/23 23:15:07 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:07 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:07 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:07 Send Done
+2025/03/23 23:15:07 Recv First Byte
+[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D2025/03/23 23:15:08 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:08 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:08 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:08 Send Done
+2025/03/23 23:15:08 Recv First Byte
+[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D2025/03/23 23:15:09 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:09 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:09 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:09 Send Done
+2025/03/23 23:15:09 Recv First Byte
+[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D2025/03/23 23:15:10 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:10 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:10 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:10 Send Done
+2025/03/23 23:15:10 Recv First Byte
+[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D2025/03/23 23:15:11 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:11 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:11 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:11 Send Done
+2025/03/23 23:15:11 Recv First Byte
+[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D2025/03/23 23:15:10 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:10 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:10 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:10 Send Done
+2025/03/23 23:15:10 Recv First Byte
+[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D2025/03/23 23:15:11 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:11 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:11 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:11 Send Done
+2025/03/23 23:15:11 Recv First Byte
+[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D2025/03/23 23:15:12 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:12 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:12 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:12 Send Done
+2025/03/23 23:15:12 Recv First Byte
+[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D[0D[2K⣟ Waiting for health checks...[0D[0D[2K⣯ Waiting for health checks...[0D[0D[2K⣷ Waiting for health checks...[0D[0D[2K⣾ Waiting for health checks...[0D[0D[2K⣽ Waiting for health checks...[0D[0D[2K⣻ Waiting for health checks...[0D[0D[2K⢿ Waiting for health checks...[0D[0D[2K⡿ Waiting for health checks...[0D2025/03/23 23:15:13 Sent Header: Host [127.0.0.1:54321]
+2025/03/23 23:15:13 Sent Header: User-Agent [Go-http-client/1.1]
+2025/03/23 23:15:13 Sent Header: Apikey [eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0]
+2025/03/23 23:15:13 Send Done
+2025/03/23 23:15:13 Recv First Byte
+supabase_edge_runtime_3nigma-next container logs:
+DEBUG Opening cache /root/.cache/deno/dep_analysis_cache_v1...
+DEBUG Opening cache /root/.cache/deno/node_analysis_cache_v1...
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: file:///root/index.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std/http/status.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std/http/status.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std/http/status.ts
+Download https://deno.land/std/http/status.ts
+DEBUG starting new connection: https://deno.land/
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std/path/posix/mod.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std/path/posix/mod.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std/path/posix/mod.ts
+Download https://deno.land/std/path/posix/mod.ts
+DEBUG starting new connection: https://deno.land/
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/index.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/index.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/index.ts
+Download https://deno.land/x/jose@v4.13.1/index.ts
+DEBUG starting new connection: https://deno.land/
+DEBUG No cached session for DnsName("deno.land")
+DEBUG Not resuming any session
+DEBUG No cached session for DnsName("deno.land")
+DEBUG Not resuming any session
+DEBUG No cached session for DnsName("deno.land")
+DEBUG Not resuming any session
+DEBUG Using ciphersuite TLS13_AES_256_GCM_SHA384
+DEBUG Not resuming
+DEBUG TLS1.3 encrypted extensions: [Protocols([ProtocolName(6832)]), ServerNameAck]
+DEBUG ALPN protocol is Some(b"h2")
+DEBUG Using ciphersuite TLS13_AES_256_GCM_SHA384
+DEBUG Not resuming
+DEBUG TLS1.3 encrypted extensions: [Protocols([ProtocolName(6832)]), ServerNameAck]
+DEBUG ALPN protocol is Some(b"h2")
+DEBUG Using ciphersuite TLS13_AES_256_GCM_SHA384
+DEBUG Not resuming
+DEBUG TLS1.3 encrypted extensions: [Protocols([ProtocolName(6832)]), ServerNameAck]
+DEBUG ALPN protocol is Some(b"h2")
+DEBUG Sending warning alert CloseNotify
+DEBUG Sending warning alert CloseNotify
+DEBUG redirect policy disallowed redirection to 'https://deno.land/std@0.224.0/path/posix/mod.ts'
+Implicitly using latest version (0.224.0) for https://deno.land/std/path/posix/mod.ts
+DEBUG Redirecting to "/std@0.224.0/path/posix/mod.ts"...
+DEBUG redirect policy disallowed redirection to 'https://deno.land/std@0.224.0/http/status.ts'
+Implicitly using latest version (0.224.0) for https://deno.land/std/http/status.ts
+DEBUG Redirecting to "/std@0.224.0/http/status.ts"...
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/http/status.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/http/status.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/http/status.ts
+Download https://deno.land/std@0.224.0/http/status.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/mod.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/mod.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/mod.ts
+Download https://deno.land/std@0.224.0/path/posix/mod.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwe/compact/decrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/compact/decrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/compact/decrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwe/compact/decrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwe/flattened/decrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/flattened/decrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/flattened/decrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwe/flattened/decrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwe/general/decrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/general/decrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/general/decrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwe/general/decrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwe/general/encrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/general/encrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/general/encrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwe/general/encrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jws/compact/verify.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/compact/verify.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/compact/verify.ts
+Download https://deno.land/x/jose@v4.13.1/jws/compact/verify.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jws/flattened/verify.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/flattened/verify.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/flattened/verify.ts
+Download https://deno.land/x/jose@v4.13.1/jws/flattened/verify.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jws/general/verify.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/general/verify.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/general/verify.ts
+Download https://deno.land/x/jose@v4.13.1/jws/general/verify.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwt/verify.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/verify.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/verify.ts
+Download https://deno.land/x/jose@v4.13.1/jwt/verify.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwt/decrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/decrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/decrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwt/decrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwe/compact/encrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/compact/encrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/compact/encrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwe/compact/encrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwe/flattened/encrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/flattened/encrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwe/flattened/encrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwe/flattened/encrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jws/compact/sign.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/compact/sign.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/compact/sign.ts
+Download https://deno.land/x/jose@v4.13.1/jws/compact/sign.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jws/flattened/sign.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/flattened/sign.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/flattened/sign.ts
+Download https://deno.land/x/jose@v4.13.1/jws/flattened/sign.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jws/general/sign.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/general/sign.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jws/general/sign.ts
+Download https://deno.land/x/jose@v4.13.1/jws/general/sign.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwt/sign.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/sign.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/sign.ts
+Download https://deno.land/x/jose@v4.13.1/jwt/sign.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwt/encrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/encrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/encrypt.ts
+Download https://deno.land/x/jose@v4.13.1/jwt/encrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwk/thumbprint.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwk/thumbprint.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwk/thumbprint.ts
+Download https://deno.land/x/jose@v4.13.1/jwk/thumbprint.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwk/embedded.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwk/embedded.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwk/embedded.ts
+Download https://deno.land/x/jose@v4.13.1/jwk/embedded.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwks/local.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwks/local.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwks/local.ts
+Download https://deno.land/x/jose@v4.13.1/jwks/local.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwks/remote.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwks/remote.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwks/remote.ts
+Download https://deno.land/x/jose@v4.13.1/jwks/remote.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwt/unsecured.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/unsecured.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/unsecured.ts
+Download https://deno.land/x/jose@v4.13.1/jwt/unsecured.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/key/export.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/export.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/export.ts
+Download https://deno.land/x/jose@v4.13.1/key/export.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/key/import.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/import.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/import.ts
+Download https://deno.land/x/jose@v4.13.1/key/import.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/util/decode_protected_header.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/decode_protected_header.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/decode_protected_header.ts
+Download https://deno.land/x/jose@v4.13.1/util/decode_protected_header.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/util/decode_jwt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/decode_jwt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/decode_jwt.ts
+Download https://deno.land/x/jose@v4.13.1/util/decode_jwt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/util/errors.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/errors.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/errors.ts
+Download https://deno.land/x/jose@v4.13.1/util/errors.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/key/generate_key_pair.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/generate_key_pair.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/generate_key_pair.ts
+Download https://deno.land/x/jose@v4.13.1/key/generate_key_pair.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/key/generate_secret.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/generate_secret.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/key/generate_secret.ts
+Download https://deno.land/x/jose@v4.13.1/key/generate_secret.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/util/base64url.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/base64url.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/util/base64url.ts
+Download https://deno.land/x/jose@v4.13.1/util/base64url.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/basename.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/basename.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/basename.ts
+Download https://deno.land/std@0.224.0/path/posix/basename.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/constants.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/constants.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/constants.ts
+Download https://deno.land/std@0.224.0/path/posix/constants.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/dirname.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/dirname.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/dirname.ts
+Download https://deno.land/std@0.224.0/path/posix/dirname.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/extname.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/extname.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/extname.ts
+Download https://deno.land/std@0.224.0/path/posix/extname.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/format.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/format.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/format.ts
+Download https://deno.land/std@0.224.0/path/posix/format.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/from_file_url.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/from_file_url.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/from_file_url.ts
+Download https://deno.land/std@0.224.0/path/posix/from_file_url.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/is_absolute.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/is_absolute.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/is_absolute.ts
+Download https://deno.land/std@0.224.0/path/posix/is_absolute.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/join.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/join.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/join.ts
+Download https://deno.land/std@0.224.0/path/posix/join.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/normalize.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/normalize.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/normalize.ts
+Download https://deno.land/std@0.224.0/path/posix/normalize.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/parse.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/parse.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/parse.ts
+Download https://deno.land/std@0.224.0/path/posix/parse.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/relative.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/relative.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/relative.ts
+Download https://deno.land/std@0.224.0/path/posix/relative.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/resolve.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/resolve.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/resolve.ts
+Download https://deno.land/std@0.224.0/path/posix/resolve.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/to_file_url.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/to_file_url.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/to_file_url.ts
+Download https://deno.land/std@0.224.0/path/posix/to_file_url.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/to_namespaced_path.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/to_namespaced_path.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/to_namespaced_path.ts
+Download https://deno.land/std@0.224.0/path/posix/to_namespaced_path.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/common.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/common.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/common.ts
+Download https://deno.land/std@0.224.0/path/posix/common.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_interface.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_interface.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_interface.ts
+Download https://deno.land/std@0.224.0/path/_interface.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/glob_to_regexp.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/glob_to_regexp.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/glob_to_regexp.ts
+Download https://deno.land/std@0.224.0/path/posix/glob_to_regexp.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/is_glob.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/is_glob.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/is_glob.ts
+Download https://deno.land/std@0.224.0/path/posix/is_glob.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/join_globs.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/join_globs.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/join_globs.ts
+Download https://deno.land/std@0.224.0/path/posix/join_globs.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/normalize_glob.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/normalize_glob.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/normalize_glob.ts
+Download https://deno.land/std@0.224.0/path/posix/normalize_glob.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/buffer_utils.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/buffer_utils.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/buffer_utils.ts
+Download https://deno.land/x/jose@v4.13.1/lib/buffer_utils.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/base64url.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/base64url.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/base64url.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/base64url.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/decrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/decrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/decrypt.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/decrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/zlib.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/zlib.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/zlib.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/zlib.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/is_disjoint.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/is_disjoint.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/is_disjoint.ts
+Download https://deno.land/x/jose@v4.13.1/lib/is_disjoint.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/is_object.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/is_object.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/is_object.ts
+Download https://deno.land/x/jose@v4.13.1/lib/is_object.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/decrypt_key_management.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/decrypt_key_management.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/decrypt_key_management.ts
+Download https://deno.land/x/jose@v4.13.1/lib/decrypt_key_management.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/cek.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/cek.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/cek.ts
+Download https://deno.land/x/jose@v4.13.1/lib/cek.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/validate_crit.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/validate_crit.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/validate_crit.ts
+Download https://deno.land/x/jose@v4.13.1/lib/validate_crit.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/validate_algorithms.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/validate_algorithms.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/validate_algorithms.ts
+Download https://deno.land/x/jose@v4.13.1/lib/validate_algorithms.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/encrypt_key_management.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/encrypt_key_management.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/encrypt_key_management.ts
+Download https://deno.land/x/jose@v4.13.1/lib/encrypt_key_management.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/verify.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/verify.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/verify.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/verify.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/check_key_type.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/check_key_type.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/check_key_type.ts
+Download https://deno.land/x/jose@v4.13.1/lib/check_key_type.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/jwt_claims_set.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/jwt_claims_set.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/jwt_claims_set.ts
+Download https://deno.land/x/jose@v4.13.1/lib/jwt_claims_set.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/encrypt.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/encrypt.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/encrypt.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/encrypt.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/iv.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/iv.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/iv.ts
+Download https://deno.land/x/jose@v4.13.1/lib/iv.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/sign.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/sign.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/sign.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/sign.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/jwt/produce.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/produce.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/jwt/produce.ts
+Download https://deno.land/x/jose@v4.13.1/jwt/produce.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/digest.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/digest.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/digest.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/digest.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/fetch_jwks.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/fetch_jwks.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/fetch_jwks.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/fetch_jwks.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/env.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/env.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/env.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/env.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/asn1.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/asn1.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/asn1.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/asn1.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/key_to_jwk.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/key_to_jwk.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/key_to_jwk.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/key_to_jwk.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/jwk_to_key.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/jwk_to_key.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/jwk_to_key.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/jwk_to_key.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/generate.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/generate.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/generate.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/generate.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/basename.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/basename.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/basename.ts
+Download https://deno.land/std@0.224.0/path/_common/basename.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/strip_trailing_separators.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/strip_trailing_separators.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/strip_trailing_separators.ts
+Download https://deno.land/std@0.224.0/path/_common/strip_trailing_separators.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/posix/_util.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/_util.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/posix/_util.ts
+Download https://deno.land/std@0.224.0/path/posix/_util.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/dirname.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/dirname.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/dirname.ts
+Download https://deno.land/std@0.224.0/path/_common/dirname.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/constants.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/constants.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/constants.ts
+Download https://deno.land/std@0.224.0/path/_common/constants.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/assert_path.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/assert_path.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/assert_path.ts
+Download https://deno.land/std@0.224.0/path/_common/assert_path.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/format.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/format.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/format.ts
+Download https://deno.land/std@0.224.0/path/_common/format.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/from_file_url.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/from_file_url.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/from_file_url.ts
+Download https://deno.land/std@0.224.0/path/_common/from_file_url.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/normalize.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/normalize.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/normalize.ts
+Download https://deno.land/std@0.224.0/path/_common/normalize.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/normalize_string.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/normalize_string.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/normalize_string.ts
+Download https://deno.land/std@0.224.0/path/_common/normalize_string.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/relative.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/relative.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/relative.ts
+Download https://deno.land/std@0.224.0/path/_common/relative.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/to_file_url.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/to_file_url.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/to_file_url.ts
+Download https://deno.land/std@0.224.0/path/_common/to_file_url.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/common.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/common.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/common.ts
+Download https://deno.land/std@0.224.0/path/_common/common.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/_common/glob_to_reg_exp.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/glob_to_reg_exp.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/_common/glob_to_reg_exp.ts
+Download https://deno.land/std@0.224.0/path/_common/glob_to_reg_exp.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/std@0.224.0/path/is_glob.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/std@0.224.0/path/is_glob.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/std@0.224.0/path/is_glob.ts
+Download https://deno.land/std@0.224.0/path/is_glob.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/check_iv_length.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/check_iv_length.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/check_iv_length.ts
+Download https://deno.land/x/jose@v4.13.1/lib/check_iv_length.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/check_cek_length.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/check_cek_length.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/check_cek_length.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/check_cek_length.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/timing_safe_equal.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/timing_safe_equal.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/timing_safe_equal.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/timing_safe_equal.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/webcrypto.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/webcrypto.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/webcrypto.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/webcrypto.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/crypto_key.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/crypto_key.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/crypto_key.ts
+Download https://deno.land/x/jose@v4.13.1/lib/crypto_key.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/invalid_key_input.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/invalid_key_input.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/invalid_key_input.ts
+Download https://deno.land/x/jose@v4.13.1/lib/invalid_key_input.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/is_key_like.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/is_key_like.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/is_key_like.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/is_key_like.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/aeskw.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/aeskw.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/aeskw.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/aeskw.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/ecdhes.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/ecdhes.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/ecdhes.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/ecdhes.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/pbes2kw.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/pbes2kw.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/pbes2kw.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/pbes2kw.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/rsaes.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/rsaes.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/rsaes.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/rsaes.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/aesgcmkw.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/aesgcmkw.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/aesgcmkw.ts
+Download https://deno.land/x/jose@v4.13.1/lib/aesgcmkw.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/random.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/random.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/random.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/random.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/subtle_dsa.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/subtle_dsa.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/subtle_dsa.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/subtle_dsa.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/check_key_length.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/check_key_length.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/check_key_length.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/check_key_length.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/get_sign_verify_key.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/get_sign_verify_key.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/get_sign_verify_key.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/get_sign_verify_key.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/epoch.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/epoch.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/epoch.ts
+Download https://deno.land/x/jose@v4.13.1/lib/epoch.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/secs.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/secs.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/secs.ts
+Download https://deno.land/x/jose@v4.13.1/lib/secs.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/format_pem.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/format_pem.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/format_pem.ts
+Download https://deno.land/x/jose@v4.13.1/lib/format_pem.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/bogus.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/bogus.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/bogus.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/bogus.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/lib/check_p2s.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/check_p2s.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/lib/check_p2s.ts
+Download https://deno.land/x/jose@v4.13.1/lib/check_p2s.ts
+DEBUG FileFetcher::fetch_no_follow_with_options - specifier: https://deno.land/x/jose@v4.13.1/runtime/subtle_rsaes.ts
+DEBUG FileFetcher::fetch_remote_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/subtle_rsaes.ts
+DEBUG FileFetcher::fetch_cached_no_follow - specifier: https://deno.land/x/jose@v4.13.1/runtime/subtle_rsaes.ts
+Download https://deno.land/x/jose@v4.13.1/runtime/subtle_rsaes.ts
+DEBUG Opening cache /root/.cache/deno/node_analysis_cache_v1...
+DEBUG edge-runtime is listening on 0.0.0.0:8081
+Functions config: {}
+Serving functions on http://127.0.0.1:54321/functions/v1/<function-name>
+Using supabase-edge-runtime-1.67.2 (compatible with Deno v1.45.2)
+DEBUG Sending warning alert CloseNotify
+[2K[?25h[?1002l[?1003l[?1006lStopping containers...
+Pruned containers: [5e0ca30194471da0c2478c17a24197801ca8cb329e120f4a921a10e5321534a1 7d510006469e8c7ca2e54380a34fca256a2acda0dda75eb4829b82047b5ad42c ed024c064afefd8419b91d5d151fe22296d9779eb473399181129f40f334f492 9f901a8ff00c35d081ceb4d330cc4b3801d2e0aacac8b87cef002f5273380ce1 625e0f86c3943c355c11ea0839a2b7d80ab6457c181ff6534bda5601af3460d2 e8d18981f604c9b414906956cb3864b559c7fc37b5be862deb5f9d353157e179 7d57ccec8cfcc0f7dd0af4d6d7ace54217e03ff337a239e32b968ed66d8c968a 8e17e697c2ab9d55114222bc34e3c01cf92b5e5cc96145ef0cce65705b44c437 96b60caac1a9ca7f3e65ad4af7c443c2c881967abc66c0114d06ae556667f27f 6e7515b32daa25dd77e585e1380233c9b0f5cbaeda3d67d76fb4f643bb716367 7bad17bd18b36c8849aba1cb9b9d0483b05c2e23e8049e2538c76f298119dde8 c9f680298ff3866302b683d324ec580a9beebf01027cfae47abbac38a3ec2c5b]
+Pruned network: [supabase_network_3nigma-next]
+Error status 500: 

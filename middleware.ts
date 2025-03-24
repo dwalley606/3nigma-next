@@ -1,7 +1,9 @@
+// middleware.ts
+import { NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
-import { NextRequest, NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-async function createClient(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const response = NextResponse.next();
   
   const supabase = createServerClient(
@@ -19,23 +21,10 @@ async function createClient(request: NextRequest) {
     }
   );
 
-  return { supabase, response };
-}
-
-export async function middleware(request: NextRequest) {
-  const { supabase, response } = await createClient(request);
   const { data: { session } } = await supabase.auth.getSession();
 
-  const pathname = request.nextUrl.pathname;
-
-  // Redirect to login if no session and accessing a protected route
-  if (!session && pathname.startsWith('/dashboard') && pathname !== '/dashboard/login' && pathname !== '/dashboard/signup') {
-    return NextResponse.redirect(new URL('/dashboard/login', request.url));
-  }
-
-  // Redirect to dashboard if logged in and accessing login/signup
-  if (session && (pathname === '/dashboard/login' || pathname === '/dashboard/signup')) {
-    return NextResponse.redirect(new URL('/dashboard', request.url));
+  if (!session && request.nextUrl.pathname.startsWith('/dashboard')) {
+    return NextResponse.redirect(new URL('/auth?mode=login', request.url));
   }
 
   return response;
