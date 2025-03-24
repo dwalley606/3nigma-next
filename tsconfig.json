@@ -22,7 +22,8 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@utils/*": ["./src/app/utils/*"],
-      "@lib/*": ["./src/app/lib/*"]
+      "@lib/*": ["./src/app/lib/*"],
+      "@/context/*": ["src/context/*"]
     },
     "baseUrl": "."
   },
