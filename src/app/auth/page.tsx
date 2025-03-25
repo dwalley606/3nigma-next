@@ -1,3 +1,4 @@
+// src/app/auth/page.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -14,7 +15,6 @@ export default function AuthPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  // Set initial mode based on query parameter
   useEffect(() => {
     const mode = searchParams.get('mode');
     setIsSignUp(mode === 'signup');
@@ -23,15 +23,24 @@ export default function AuthPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
+
     try {
       if (isSignUp) {
-        const { error } = await supabase.auth.signUp({ email, password });
-        if (error) throw error;
-        alert('Sign-up successful! Check your email to confirm.');
+        const { data, error } = await supabase.auth.signUp({ email, password });
+        if (error) {
+          if (error.status === 422 && error.message.includes('User already registered')) {
+            setError('Email already registered. Try signing in.');
+          } else {
+            throw error;
+          }
+        } else {
+          console.log('Signup response:', data);
+          alert('Sign-up successful! Check your email to confirm.');
+        }
       } else {
         const { data, error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
-        console.log('Client session after sign-in:', data.session); // Debug
+        console.log('Sign-in response:', data);
         router.push('/dashboard');
       }
     } catch (err: any) {
@@ -48,10 +57,7 @@ export default function AuthPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen">
         <p>Welcome, {user.email}!</p>
-        <button
-          onClick={handleSignOut}
-          className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-        >
+        <button onClick={handleSignOut} className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
           Sign Out
         </button>
       </div>
@@ -78,17 +84,11 @@ export default function AuthPage() {
           className="px-4 py-2 border rounded"
           required
         />
-        <button
-          type="submit"
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-        >
+        <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
           {isSignUp ? 'Sign Up' : 'Sign In'}
         </button>
       </form>
-      <button
-        onClick={() => setIsSignUp(!isSignUp)}
-        className="mt-4 text-blue-500 hover:underline"
-      >
+      <button onClick={() => setIsSignUp(!isSignUp)} className="mt-4 text-blue-500 hover:underline">
         {isSignUp ? 'Already have an account? Sign In' : 'Need an account? Sign Up'}
       </button>
       {error && <p className="mt-4 text-red-500">{error}</p>}

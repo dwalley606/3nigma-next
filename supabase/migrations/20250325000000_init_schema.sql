@@ -1,4 +1,3 @@
--- Extensions (unchanged)
 CREATE EXTENSION IF NOT EXISTS "pgsodium";
 CREATE EXTENSION IF NOT EXISTS "pg_graphql" WITH SCHEMA "graphql";
 CREATE EXTENSION IF NOT EXISTS "pg_stat_statements" WITH SCHEMA "extensions";
@@ -7,7 +6,6 @@ CREATE EXTENSION IF NOT EXISTS "pgjwt" WITH SCHEMA "extensions";
 CREATE EXTENSION IF NOT EXISTS "supabase_vault" WITH SCHEMA "vault";
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA "extensions";
 
--- Tables
 CREATE TABLE IF NOT EXISTS "public"."user_profiles" (
     "id" uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
     "username" text NOT NULL UNIQUE,
@@ -80,52 +78,20 @@ CREATE TABLE IF NOT EXISTS "public"."encryption_keys" (
     "private_key" text NOT NULL
 );
 
--- Indexes (unchanged)
 CREATE INDEX "idx_contact_requests_to_user_id" ON "public"."contact_requests" ("to_user_id");
 CREATE INDEX "idx_conv_participants_user_id" ON "public"."conversation_participants" ("user_id");
 CREATE INDEX "idx_messages_conversation_id" ON "public"."messages" ("conversation_id");
 CREATE INDEX "idx_messages_timestamp" ON "public"."messages" ("timestamp");
 
--- Foreign Keys
 ALTER TABLE ONLY "public"."conversations"
 ADD CONSTRAINT "fk_last_message" FOREIGN KEY ("last_message_id") REFERENCES "public"."messages"("id") ON DELETE SET NULL;
 
--- RLS
 ALTER TABLE "public"."conversation_participants" ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Users can see their conversations" ON "public"."conversation_participants"
 FOR SELECT TO "authenticated" USING (auth.uid() = user_id);
 
--- Permissions (tightened)
 GRANT USAGE ON SCHEMA "public" TO "postgres", "anon", "authenticated", "service_role";
 GRANT SELECT ON ALL TABLES IN SCHEMA "public" TO "anon";
 GRANT ALL ON ALL TABLES IN SCHEMA "public" TO "authenticated", "service_role";
 ALTER DEFAULT PRIVILEGES IN SCHEMA "public" GRANT SELECT ON TABLES TO "anon";
 ALTER DEFAULT PRIVILEGES IN SCHEMA "public" GRANT ALL ON TABLES TO "authenticated", "service_role";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-RESET ALL;
