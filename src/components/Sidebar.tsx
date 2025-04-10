@@ -1,25 +1,22 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { supabase } from '@/utils/supabase/client';
 
-interface SidebarProps {
-  userId: string;
-}
-
-export default function Sidebar({ userId }: SidebarProps) {
-  const router = useRouter();
+export default function Sidebar() {
   const [contacts, setContacts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchContacts() {
-      if (!userId) {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        console.log('No session found');
         setLoading(false);
         return;
       }
 
+      const userId = session.user.id;
       console.log('Fetching contacts for user:', userId);
       
       // Step 1: Fetch contact IDs
@@ -28,6 +25,7 @@ export default function Sidebar({ userId }: SidebarProps) {
         .select('contact_id')
         .eq('user_id', userId);
 
+      console.log('Contact IDs fetched:', contactIds, 'Error:', contactsError);
       if (contactsError) {
         console.error('Error fetching contact IDs:', contactsError.message);
         setLoading(false);
@@ -57,33 +55,41 @@ export default function Sidebar({ userId }: SidebarProps) {
     }
 
     fetchContacts();
-  }, [userId]);
+  }, []);
 
   const startConversation = async (contactId: string) => {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
+
+    const userId = session.user.id;
     const res = await fetch('/api/conversations', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userId, contactId }),
     });
     const { conversationId } = await res.json();
-    router.push(`/dashboard?convo=${conversationId}`);
+    window.location.href = `/dashboard?conversation=${conversationId}`;
   };
 
   if (loading) return <div>Loading contacts...</div>;
 
   return (
-    <div className="h-screen bg-gray-100 p-4">
+    <div className="w-64 bg-gray-100 p-4">
       <h2 className="text-lg font-bold mb-4">Contacts</h2>
       <ul>
-        {contacts.map((contact) => (
-          <li
-            key={contact.id}
-            className="p-2 hover:bg-gray-200 cursor-pointer"
-            onClick={() => startConversation(contact.id)}
-          >
-            {contact.username} ({contact.email})
-          </li>
-        ))}
+        {contacts.length === 0 ? (
+          <li>No contacts found</li>
+        ) : (
+          contacts.map((contact) => (
+            <li
+              key={contact.id}
+              className="p-2 hover:bg-gray-200 cursor-pointer"
+              onClick={() => startConversation(contact.id)}
+            >
+              {contact.username} ({contact.email})
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );
