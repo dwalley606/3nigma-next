@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { supabase } from '@/app/utils/supabase/client';
+import { supabase } from '@/utils/supabase/client';
 
 interface Conversation {
   id: string;

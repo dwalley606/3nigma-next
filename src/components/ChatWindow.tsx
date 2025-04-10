@@ -1,67 +1,101 @@
-// src/components/ChatWindow.tsx
-"use client";
+'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/app/utils/supabase/client';
+import { useSearchParams } from 'next/navigation';
+import { supabase } from '@/utils/supabase/client';
 
-export default function ChatWindow({ conversationId, userId }: { conversationId: string; userId: string }) {
+export default function ChatWindow() {
+  const searchParams = useSearchParams();
+  const conversationId = searchParams.get('conversation');
   const [messages, setMessages] = useState<any[]>([]);
   const [newMessage, setNewMessage] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchMessages = async () => {
-      const { data } = await supabase
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      setUserId(user?.id || null);
+    };
+    getUser();
+  }, []);
+
+  useEffect(() => {
+    if (!conversationId) {
+      setLoading(false);
+      return;
+    }
+
+    async function fetchMessages() {
+      const { data, error } = await supabase
         .from('messages')
-        .select('*, user_profiles(username)') // Join with user_profiles
+        .select('*')
         .eq('conversation_id', conversationId)
         .order('timestamp', { ascending: true });
-      setMessages(data || []);
-    };
+
+      if (error) console.error(error);
+      else setMessages(data || []);
+      setLoading(false);
+    }
+
     fetchMessages();
 
     const channel = supabase
-      .channel(`messages:convo:${conversationId}`)
-      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages', filter: `conversation_id=eq.${conversationId}` }, (payload) =>
-        setMessages((prev) => [...prev, payload.new])
+      .channel(`conversation:${conversationId}`)
+      .on(
+        'postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'messages', filter: `conversation_id=eq.${conversationId}` },
+        (payload) => setMessages((prev) => [...prev, payload.new])
       )
       .subscribe();
 
     return () => {
-      channel.unsubscribe();
+      supabase.removeChannel(channel);
     };
   }, [conversationId]);
 
   const sendMessage = async () => {
-    if (!newMessage.trim()) return;
+    if (!newMessage.trim() || !conversationId) return;
+
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
+
     const { error } = await supabase
       .from('messages')
-      .insert({ content: newMessage, sender_id: userId, conversation_id: conversationId });
-    if (!error) setNewMessage('');
+      .insert({
+        content: newMessage,
+        sender_id: session.user.id,
+        conversation_id: conversationId,
+      });
+
+    if (error) console.error(error);
+    else setNewMessage('');
   };
 
+  if (loading) return <div>Loading messages...</div>;
+  if (!conversationId) return <div>Select a contact to start chatting</div>;
+
   return (
-    <div className="flex flex-col h-[calc(100vh-8rem)] bg-white rounded-lg shadow-md">
-      <div className="flex-1 overflow-y-auto p-4">
+    <div className="flex-1 p-4">
+      <div className="h-96 overflow-y-auto mb-4">
         {messages.map((msg) => (
-          <div key={msg.id} className={`mb-2 ${msg.sender_id === userId ? 'text-right' : 'text-left'}`}>
-            <span className="block text-sm text-gray-500">
-              {msg.user_profiles?.username || 'Unknown'}
-            </span>
-            <span className={`inline-block p-2 rounded-lg ${msg.sender_id === userId ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-800'}`}>
-              {msg.content}
-            </span>
+          <div key={msg.id} className="mb-2">
+            <strong>{msg.sender_id === userId ? 'You' : 'Them'}: </strong>
+            {msg.content}
           </div>
         ))}
       </div>
-      <div className="p-4 border-t bg-gray-50">
+      <div className="flex">
         <input
           type="text"
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
-          onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
-          className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 p-2 border rounded-l"
           placeholder="Type a message..."
         />
+        <button onClick={sendMessage} className="p-2 bg-blue-500 text-white rounded-r">
+          Send
+        </button>
       </div>
     </div>
   );

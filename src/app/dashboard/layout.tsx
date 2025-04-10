@@ -1,5 +1,5 @@
 // src/app/dashboard/layout.tsx
-import { createSupabaseServerClient } from '@/app/utils/supabase/server';
+import { createSupabaseServerClient } from '@/utils/supabase/server';
 import { redirect } from 'next/navigation';
 import Sidebar from '@/components/Sidebar'; // New client component
 

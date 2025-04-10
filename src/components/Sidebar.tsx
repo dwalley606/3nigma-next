@@ -1,35 +1,70 @@
-// src/components/Sidebar.tsx
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import ConversationList from '@/components/ConversationList';
+import { useState, useEffect } from 'react';
+import { supabase } from '@/utils/supabase/client';
 
-export default function Sidebar({ userId }: { userId: string }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Sidebar() {
+  const [contacts, setContacts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchContacts() {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        setLoading(false);
+        return;
+      }
+
+      const userId = session.user.id;
+      const { data, error } = await supabase
+        .from('contacts')
+        .select(`
+          contact_id,
+          user_profiles:contact_id (username, email, profile_pic_url)
+        `)
+        .eq('user_id', userId);
+
+      if (error) {
+        console.error('Error fetching contacts:', error.message);
+      } else {
+        setContacts(data || []);
+      }
+      setLoading(false);
+    }
+
+    fetchContacts();
+  }, []);
+
+  const startConversation = async (contactId: string) => {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
+
+    const userId = session.user.id;
+    const res = await fetch('/api/conversations', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userId, contactId }),
+    });
+    const { conversationId } = await res.json();
+    window.location.href = `/dashboard?conversation=${conversationId}`;
+  };
+
+  if (loading) return <div>Loading contacts...</div>;
 
   return (
-    <>
-      <button
-        className="md:hidden p-4 bg-gray-800 text-white fixed top-0 left-0 z-10"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? 'Close' : 'Menu'}
-      </button>
-      <aside
-        className={`w-full md:w-64 bg-gray-800 text-white p-4 md:h-screen md:sticky md:top-0 ${isOpen ? 'block mt-12' : 'hidden md:block'}`}
-      >
-        <h1 className="text-2xl font-bold mb-6">3NIGMA</h1>
-        <nav>
-          <ConversationList userId={userId} />
-          <Link href="/dashboard/contacts" className="block py-2 px-4 hover:bg-gray-700 rounded">
-            Contacts
-          </Link>
-          <Link href="/dashboard/conversations" className="block py-2 px-4 hover:bg-gray-700 rounded">
-            Conversations
-          </Link>
-        </nav>
-      </aside>
-    </>
+    <div className="w-64 bg-gray-100 p-4">
+      <h2 className="text-lg font-bold mb-4">Contacts</h2>
+      <ul>
+        {contacts.map((contact) => (
+          <li
+            key={contact.contact_id}
+            className="p-2 hover:bg-gray-200 cursor-pointer"
+            onClick={() => startConversation(contact.contact_id)}
+          >
+            {contact.user_profiles.username} ({contact.user_profiles.email})
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

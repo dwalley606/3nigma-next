@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import { supabase } from '../utils/supabase/client';
+import { supabase } from '../../utils/supabase/client';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function AuthPage() {

@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { supabase } from '@/app/utils/supabase/client';
+import { supabase } from '@/utils/supabase/client';
 import ChatWindow from '@/components/ChatWindow';
 import ContactDetails from '@/components/ContactDetails';
 
