@@ -1,4 +1,3 @@
-// src/app/auth/page.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -11,14 +10,19 @@ export default function AuthPage() {
   const [password, setPassword] = useState('');
   const [isSignUp, setIsSignUp] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const { user, signOut } = useAuth();
+  const { user, signOut, loading } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
 
   useEffect(() => {
     const mode = searchParams.get('mode');
     setIsSignUp(mode === 'signup');
-  }, [searchParams]);
+    console.log('AuthPage useEffect - User:', user, 'Loading:', loading);
+    if (!loading && user) {
+      console.log('Redirecting to /dashboard from useEffect');
+      router.push('/dashboard');
+    }
+  }, [searchParams, user, loading, router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,7 +45,15 @@ export default function AuthPage() {
         const { data, error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
         console.log('Sign-in response:', data);
+        console.log('Pushing to /dashboard from handleSubmit');
+        // Force redirect after successful sign-in
         router.push('/dashboard');
+        // Ensure navigation happens even if state lags
+        setTimeout(() => {
+          if (!window.location.pathname.startsWith('/dashboard')) {
+            window.location.href = '/dashboard';
+          }
+        }, 500); // Fallback if router.push fails
       }
     } catch (err: any) {
       setError(err.message);
@@ -52,6 +64,8 @@ export default function AuthPage() {
     await signOut();
     router.push('/');
   };
+
+  if (loading) return <div>Loading...</div>;
 
   if (user) {
     return (

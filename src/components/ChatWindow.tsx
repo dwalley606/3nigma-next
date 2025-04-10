@@ -4,21 +4,16 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { supabase } from '@/utils/supabase/client';
 
-export default function ChatWindow() {
+interface ChatWindowProps {
+  conversationId: string;
+  userId: string;
+}
+
+export default function ChatWindow({ conversationId, userId }: ChatWindowProps) {
   const searchParams = useSearchParams();
-  const conversationId = searchParams.get('conversation');
   const [messages, setMessages] = useState<any[]>([]);
   const [newMessage, setNewMessage] = useState('');
   const [loading, setLoading] = useState(true);
-  const [userId, setUserId] = useState<string | null>(null);
-
-  useEffect(() => {
-    const getUser = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      setUserId(user?.id || null);
-    };
-    getUser();
-  }, []);
 
   useEffect(() => {
     if (!conversationId) {

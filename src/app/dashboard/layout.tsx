@@ -19,9 +19,13 @@ export default async function DashboardLayout({ children }: { children: React.Re
   console.log('Server User:', user);
 
   return (
-    <div className="flex min-h-screen flex-col md:flex-row">
-      <Sidebar userId={user.id} />
-      <main className="flex-1 p-6">{children}</main>
+    <div className="flex min-h-screen">
+      <div className="w-64">
+        <Sidebar userId={user.id} />
+      </div>
+      <main className="flex-1 p-6 ml-64">
+        {children}
+      </main>
     </div>
   );
 }
