@@ -1,41 +1,85 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { supabase } from '@/utils/supabase/client';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import ConversationList from './ConversationList';
 
-export default function Sidebar() {
+export default function Sidebar({ userId }: { userId: string }) {
+  const [conversations, setConversations] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function fetchConversations() {
+      if (!userId) {
+        console.log('No userId provided, skipping fetch');
+        if (isMounted) setLoading(false);
+        return;
+      }
+
+      console.log('Fetching conversations for user:', userId);
+      
+      const { data: participantData, error: participantError } = await supabase
+        .from('conversation_participants')
+        .select('conversation_id')
+        .eq('user_id', userId);
+
+      console.log('Conversation IDs fetched:', participantData, 'Error:', participantError);
+      if (participantError || !isMounted) {
+        if (participantError) console.error('Error fetching conversation IDs:', participantError.message);
+        setLoading(false);
+        return;
+      }
+
+      if (!participantData || participantData.length === 0) {
+        console.log('No conversations found for user');
+        if (isMounted) setConversations([]);
+        setLoading(false);
+        return;
+      }
+
+      const { data, error } = await supabase
+        .from('conversations')
+        .select('id, name, last_message_id, created_at, updated_at')
+        .in('id', participantData.map(p => p.conversation_id))
+        .order('updated_at', { ascending: false });
+
+      console.log('Conversations fetch result:', data, 'Error:', error);
+      if (error || !isMounted) {
+        if (error) console.error('Error fetching conversations:', error.message);
+        setLoading(false);
+        return;
+      }
+
+      if (isMounted) setConversations(data || []);
+      setLoading(false);
+    }
+
+    fetchConversations();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [userId]);
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
     router.push('/auth?mode=login');
   };
 
+  if (loading) return <div className="text-gray-900">Loading...</div>;
+
   return (
-    <div className="w-64 bg-gray-100 p-4 text-black flex flex-col h-screen">
-      <nav className="flex-1">
-        <ul className="space-y-2">
-          <li>
-            <Link href="/dashboard" className="block p-2 hover:bg-gray-200 rounded">
-              Conversations
-            </Link>
-          </li>
-          <li>
-            <Link href="/dashboard/contacts" className="block p-2 hover:bg-gray-200 rounded">
-              Contacts
-            </Link>
-          </li>
-          <li>
-            <Link href="/dashboard/settings" className="block p-2 hover:bg-gray-200 rounded">
-              Settings
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <div className="w-80 bg-gray-50 border-r border-gray-200 flex flex-col h-screen">
+      <div className="p-4 flex-1 overflow-y-auto">
+        <ConversationList conversations={conversations} />
+      </div>
       <button
         onClick={handleLogout}
-        className="w-full p-2 bg-red-500 text-white rounded hover:bg-red-600"
+        className="m-4 p-2 bg-red-500 text-white rounded hover:bg-red-600"
       >
         Logout
       </button>

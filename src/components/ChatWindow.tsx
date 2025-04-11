@@ -1,97 +1,63 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
 import { supabase } from '@/utils/supabase/client';
 
-interface ChatWindowProps {
-  conversationId: string;
-  userId: string;
-}
-
-export default function ChatWindow({ conversationId, userId }: ChatWindowProps) {
-  const searchParams = useSearchParams();
+export default function ChatWindow({ conversationId, userId }: { conversationId: string; userId: string }) {
   const [messages, setMessages] = useState<any[]>([]);
-  const [newMessage, setNewMessage] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!conversationId) {
-      setLoading(false);
-      return;
-    }
-
     async function fetchMessages() {
       const { data, error } = await supabase
         .from('messages')
-        .select('*')
+        .select('id, content, sender_id, timestamp')
         .eq('conversation_id', conversationId)
         .order('timestamp', { ascending: true });
 
-      if (error) console.error(error);
-      else setMessages(data || []);
+      if (error) {
+        console.error('Error fetching messages:', error.message);
+      } else {
+        setMessages(data || []);
+      }
       setLoading(false);
     }
 
     fetchMessages();
 
-    const channel = supabase
+    const subscription = supabase
       .channel(`conversation:${conversationId}`)
-      .on(
-        'postgres_changes',
-        { event: 'INSERT', schema: 'public', table: 'messages', filter: `conversation_id=eq.${conversationId}` },
-        (payload) => setMessages((prev) => [...prev, payload.new])
-      )
+      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages', filter: `conversation_id=eq.${conversationId}` }, (payload) => {
+        setMessages((prev) => [...prev, payload.new]);
+      })
       .subscribe();
 
     return () => {
-      supabase.removeChannel(channel);
+      supabase.removeChannel(subscription);
     };
   }, [conversationId]);
 
-  const sendMessage = async () => {
-    if (!newMessage.trim() || !conversationId) return;
-
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) return;
-
-    const { error } = await supabase
-      .from('messages')
-      .insert({
-        content: newMessage,
-        sender_id: session.user.id,
-        conversation_id: conversationId,
-      });
-
-    if (error) console.error(error);
-    else setNewMessage('');
-  };
-
-  if (loading) return <div>Loading messages...</div>;
-  if (!conversationId) return <div>Select a contact to start chatting</div>;
+  if (loading) return <p className="text-gray-900">Loading messages...</p>;
 
   return (
-    <div className="flex-1 p-4">
-      <div className="h-96 overflow-y-auto mb-4">
-        {messages.map((msg) => (
-          <div key={msg.id} className="mb-2">
-            <strong>{msg.sender_id === userId ? 'You' : 'Them'}: </strong>
-            {msg.content}
+    <div className="flex-1 p-4 overflow-y-auto bg-white">
+      {messages.length === 0 ? (
+        <p className="text-gray-500">No messages yet.</p>
+      ) : (
+        messages.map((message) => (
+          <div
+            key={message.id}
+            className={`mb-4 p-3 rounded-lg max-w-xs ${
+              message.sender_id === userId ? 'bg-blue-500 text-white ml-auto' : 'bg-gray-200 text-gray-900'
+            }`}
+          >
+            <p>{message.content}</p>
+            <p className="text-xs mt-1 opacity-75">
+              {new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+            </p>
           </div>
-        ))}
-      </div>
-      <div className="flex">
-        <input
-          type="text"
-          value={newMessage}
-          onChange={(e) => setNewMessage(e.target.value)}
-          className="flex-1 p-2 border rounded-l"
-          placeholder="Type a message..."
-        />
-        <button onClick={sendMessage} className="p-2 bg-blue-500 text-white rounded-r">
-          Send
-        </button>
-      </div>
+        ))
+      )}
     </div>
   );
 }
