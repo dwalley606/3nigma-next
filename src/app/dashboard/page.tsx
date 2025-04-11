@@ -1,72 +1,85 @@
-// src/app/dashboard/page.tsx
-"use client";
+'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { supabase } from '@/utils/supabase/client';
+import Sidebar from '@/components/Sidebar';
 import ChatWindow from '@/components/ChatWindow';
-import ContactDetails from '@/components/ContactDetails';
+import ConversationList from '@/components/ConversationList';
+import { supabase } from '@/utils/supabase/client';
 
 export default function Dashboard() {
-  const { session, loading } = useAuth();
+  const { session, loading: authLoading } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [view, setView] = useState<'chat' | 'details' | null>(null);
+  const conversationId = searchParams.get('conversation');
+  const [conversations, setConversations] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  if (loading) return <p>Loading...</p>;
-  if (!session) {
-    router.push('/auth?mode=login');
-    return null;
-  }
+  useEffect(() => {
+    if (!authLoading && !session) {
+      router.push('/auth?mode=login');
+      return;
+    }
 
-  const convoId = searchParams.get('convo');
-  const mobileView = view || (convoId ? 'chat' : null);
+    async function fetchConversations() {
+      if (!session) return;
 
-  const handleLogout = async () => {
-    await supabase.auth.signOut();
-    router.push('/');
-  };
+      const userId = session.user.id;
+      console.log('Fetching conversations for user:', userId);
+      
+      const { data: participantData, error: participantError } = await supabase
+        .from('conversation_participants')
+        .select('conversation_id')
+        .eq('user_id', userId);
+
+      console.log('Conversation IDs fetched:', participantData, 'Error:', participantError);
+      if (participantError) {
+        console.error('Error fetching conversation IDs:', participantError.message);
+        setLoading(false);
+        return;
+      }
+
+      if (!participantData || participantData.length === 0) {
+        console.log('No conversations found for user');
+        setConversations([]);
+        setLoading(false);
+        return;
+      }
+
+      const { data, error } = await supabase
+        .from('conversations')
+        .select('id, name, last_message_id, created_at, updated_at')
+        .in('id', participantData.map(p => p.conversation_id));
+
+      console.log('Conversations fetch result:', data, 'Error:', error);
+      if (error) {
+        console.error('Error fetching conversations:', error.message);
+        setLoading(false);
+        return;
+      }
+
+      setConversations(data || []);
+      setLoading(false);
+    }
+
+    fetchConversations();
+  }, [authLoading, session, router]);
+
+  if (authLoading || loading) return <p>Loading...</p>;
+  if (!session) return null;
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 h-full">
-      {(!mobileView || mobileView === 'chat') && (
-        <div className="w-full md:w-2/3">
-          {convoId ? (
-            <>
-              <ChatWindow conversationId={convoId} userId={session.user.id} />
-              <button
-                className="md:hidden mt-2 p-2 bg-gray-200 rounded"
-                onClick={() => setView('details')}
-              >
-                Show Participants
-              </button>
-            </>
-          ) : (
-            <div className="p-4">
-              <h1 className="text-2xl">Dashboard</h1>
-              <p>Welcome to your dashboard! Select a conversation to start.</p>
-            </div>
-          )}
-        </div>
-      )}
-      {convoId && (!mobileView || mobileView === 'details') && (
-        <div className="w-full md:w-1/3">
-          <ContactDetails conversationId={convoId} />
-          <button
-            className="md:hidden mt-2 p-2 bg-gray-200 rounded"
-            onClick={() => setView('chat')}
-          >
-            Back to Chat
-          </button>
-        </div>
-      )}
-      <button
-        onClick={handleLogout}
-        className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 md:absolute md:bottom-4 md:right-4"
-      >
-        Logout
-      </button>
-    </div>
+    <>
+      <Sidebar />
+      <div className="flex-1 p-6">
+        <h2 className="text-lg font-bold mb-4">Conversations</h2>
+        {conversationId ? (
+          <ChatWindow conversationId={conversationId} userId={session.user.id} />
+        ) : (
+          <ConversationList conversations={conversations} />
+        )}
+      </div>
+    </>
   );
 }

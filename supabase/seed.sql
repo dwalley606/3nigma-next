@@ -1,10 +1,10 @@
 -- Seed user_profiles for existing users
 INSERT INTO user_profiles (id, username, email, public_key, created_at)
 VALUES 
-  ('b7aff556-a546-40c3-95ab-6846f242bf29', 'walleytroll', 'dwalley606@gmail.com', 'fake-public-key-123', NOW()),
-  ('14b8d580-123a-4452-a3a7-f3d34bc86f25', 'testuser', 'testuser@example.com', 'fake-public-key-456', NOW()),
-  ('538e5526-5a22-49b2-8848-f3a923a2171d', 'testuser1', 'testuser1@example.com', 'fake-public-key-789', NOW()),
-  ('f960c561-332f-4d25-b33d-a6e57f357aa9', 'testuser2', 'testuser2@example.com', 'fake-public-key-012', NOW())
+  ('72e15210-ec81-4b84-9ab1-546f2e360221', 'walleytroll', 'dwalley606@gmail.com', 'fake-public-key-123', NOW()),
+  ('0f3db50f-7214-4d47-b74c-cd870e85bf89', 'alice', 'alice@example.com', 'fake-public-key-456', NOW()),
+  ('60f936d4-53db-4d9a-bc3a-c28a0026f4d5', 'bob', 'bob@example.com', 'fake-public-key-789', NOW()),
+  ('760d8c1c-eb6e-42fa-8069-986e0efb97aa', 'charlie', 'charlie@example.com', 'fake-public-key-012', NOW())
 ON CONFLICT (id) DO UPDATE SET 
   username = EXCLUDED.username, 
   email = EXCLUDED.email, 
@@ -13,38 +13,38 @@ ON CONFLICT (id) DO UPDATE SET
 -- Seed contacts (link users to each other)
 INSERT INTO contacts (user_id, contact_id)
 VALUES 
-  -- walleytroll <-> testuser
-  ('b7aff556-a546-40c3-95ab-6846f242bf29', '14b8d580-123a-4452-a3a7-f3d34bc86f25'),
-  ('14b8d580-123a-4452-a3a7-f3d34bc86f25', 'b7aff556-a546-40c3-95ab-6846f242bf29'),
-  -- walleytroll <-> testuser1
-  ('b7aff556-a546-40c3-95ab-6846f242bf29', '538e5526-5a22-49b2-8848-f3a923a2171d'),
-  ('538e5526-5a22-49b2-8848-f3a923a2171d', 'b7aff556-a546-40c3-95ab-6846f242bf29'),
-  -- walleytroll <-> testuser2
-  ('b7aff556-a546-40c3-95ab-6846f242bf29', 'f960c561-332f-4d25-b33d-a6e57f357aa9'),
-  ('f960c561-332f-4d25-b33d-a6e57f357aa9', 'b7aff556-a546-40c3-95ab-6846f242bf29'),
-  -- testuser <-> testuser1
-  ('14b8d580-123a-4452-a3a7-f3d34bc86f25', '538e5526-5a22-49b2-8848-f3a923a2171d'),
-  ('538e5526-5a22-49b2-8848-f3a923a2171d', '14b8d580-123a-4452-a3a7-f3d34bc86f25'),
-  -- testuser <-> testuser2
-  ('14b8d580-123a-4452-a3a7-f3d34bc86f25', 'f960c561-332f-4d25-b33d-a6e57f357aa9'),
-  ('f960c561-332f-4d25-b33d-a6e57f357aa9', '14b8d580-123a-4452-a3a7-f3d34bc86f25'),
-  -- testuser1 <-> testuser2
-  ('538e5526-5a22-49b2-8848-f3a923a2171d', 'f960c561-332f-4d25-b33d-a6e57f357aa9'),
-  ('f960c561-332f-4d25-b33d-a6e57f357aa9', '538e5526-5a22-49b2-8848-f3a923a2171d')
+  -- walleytroll <-> alice
+  ('72e15210-ec81-4b84-9ab1-546f2e360221', '0f3db50f-7214-4d47-b74c-cd870e85bf89'),
+  ('0f3db50f-7214-4d47-b74c-cd870e85bf89', '72e15210-ec81-4b84-9ab1-546f2e360221'),
+  -- walleytroll <-> bob
+  ('72e15210-ec81-4b84-9ab1-546f2e360221', '60f936d4-53db-4d9a-bc3a-c28a0026f4d5'),
+  ('60f936d4-53db-4d9a-bc3a-c28a0026f4d5', '72e15210-ec81-4b84-9ab1-546f2e360221'),
+  -- walleytroll <-> charlie
+  ('72e15210-ec81-4b84-9ab1-546f2e360221', '760d8c1c-eb6e-42fa-8069-986e0efb97aa'),
+  ('760d8c1c-eb6e-42fa-8069-986e0efb97aa', '72e15210-ec81-4b84-9ab1-546f2e360221'),
+  -- alice <-> bob
+  ('0f3db50f-7214-4d47-b74c-cd870e85bf89', '60f936d4-53db-4d9a-bc3a-c28a0026f4d5'),
+  ('60f936d4-53db-4d9a-bc3a-c28a0026f4d5', '0f3db50f-7214-4d47-b74c-cd870e85bf89'),
+  -- alice <-> charlie
+  ('0f3db50f-7214-4d47-b74c-cd870e85bf89', '760d8c1c-eb6e-42fa-8069-986e0efb97aa'),
+  ('760d8c1c-eb6e-42fa-8069-986e0efb97aa', '0f3db50f-7214-4d47-b74c-cd870e85bf89'),
+  -- bob <-> charlie
+  ('60f936d4-53db-4d9a-bc3a-c28a0026f4d5', '760d8c1c-eb6e-42fa-8069-986e0efb97aa'),
+  ('760d8c1c-eb6e-42fa-8069-986e0efb97aa', '60f936d4-53db-4d9a-bc3a-c28a0026f4d5')
 ON CONFLICT (user_id, contact_id) DO NOTHING;
 
--- Seed a conversation for testing (walleytroll and testuser)
+-- Seed a conversation for testing (walleytroll and alice)
 INSERT INTO conversations (id, is_group, name, created_at, updated_at)
 VALUES 
-  (gen_random_uuid(), false, 'Chat with TestUser', NOW(), NOW());
+  (gen_random_uuid(), false, 'Chat with Alice', NOW(), NOW());
 
 -- Add participants to the conversation
 INSERT INTO conversation_participants (conversation_id, user_id, unread_count)
-SELECT id, 'b7aff556-a546-40c3-95ab-6846f242bf29', 0 FROM conversations WHERE name = 'Chat with TestUser'
+SELECT id, '72e15210-ec81-4b84-9ab1-546f2e360221'::uuid, 0 FROM conversations WHERE name = 'Chat with Alice'
 UNION
-SELECT id, '14b8d580-123a-4452-a3a7-f3d34bc86f25', 0 FROM conversations WHERE name = 'Chat with TestUser';
+SELECT id, '0f3db50f-7214-4d47-b74c-cd870e85bf89'::uuid, 0 FROM conversations WHERE name = 'Chat with Alice';
 
 -- Seed a test message
 INSERT INTO messages (id, content, sender_id, conversation_id, timestamp)
-SELECT gen_random_uuid(), 'Hey, how’s it going?', 'b7aff556-a546-40c3-95ab-6846f242bf29', id, NOW() - INTERVAL '1 hour'
-FROM conversations WHERE name = 'Chat with TestUser';
+SELECT gen_random_uuid(), 'Hey, how’s it going?', '72e15210-ec81-4b84-9ab1-546f2e360221', id, NOW() - INTERVAL '1 hour'
+FROM conversations WHERE name = 'Chat with Alice';

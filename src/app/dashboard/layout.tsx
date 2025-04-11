@@ -1,7 +1,6 @@
-// src/app/dashboard/layout.tsx
 import { createSupabaseServerClient } from '@/utils/supabase/server';
 import { redirect } from 'next/navigation';
-import Sidebar from '@/components/Sidebar'; // New client component
+import Header from '@/components/Header';
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createSupabaseServerClient();
@@ -16,16 +15,18 @@ export default async function DashboardLayout({ children }: { children: React.Re
     user = sessionData.session.user;
   }
 
-  console.log('Server User:', user);
+  const { data: profile } = await supabase
+    .from('user_profiles')
+    .select('username')
+    .eq('id', user.id)
+    .single();
 
   return (
-    <div className="flex min-h-screen">
-      <div className="w-64">
-        <Sidebar userId={user.id} />
-      </div>
-      <main className="flex-1 p-6 ml-64">
+    <div className="min-h-screen flex flex-col">
+      <Header username={profile?.username || 'User'} />
+      <div className="flex flex-1">
         {children}
-      </main>
+      </div>
     </div>
   );
 }
