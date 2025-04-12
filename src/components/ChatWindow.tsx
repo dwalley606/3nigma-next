@@ -40,7 +40,7 @@ export default function ChatWindow({ conversationId, userId }: { conversationId:
   if (loading) return <p className="text-gray-100">Loading messages...</p>;
 
   return (
-    <div className="flex-1 p-4 overflow-y-auto bg-gray-900 text-gray-100">
+    <div className="flex-1 p-4 pb-16 overflow-y-auto bg-gray-900 text-gray-100">
       {messages.length === 0 ? (
         <p className="text-gray-400">No messages yet.</p>
       ) : (
