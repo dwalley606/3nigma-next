@@ -37,18 +37,18 @@ export default function ChatWindow({ conversationId, userId }: { conversationId:
     };
   }, [conversationId]);
 
-  if (loading) return <p className="text-gray-900">Loading messages...</p>;
+  if (loading) return <p className="text-gray-100">Loading messages...</p>;
 
   return (
-    <div className="flex-1 p-4 overflow-y-auto bg-white">
+    <div className="flex-1 p-4 overflow-y-auto bg-gray-900 text-gray-100">
       {messages.length === 0 ? (
-        <p className="text-gray-500">No messages yet.</p>
+        <p className="text-gray-400">No messages yet.</p>
       ) : (
         messages.map((message) => (
           <div
             key={message.id}
-            className={`mb-4 p-3 rounded-lg max-w-xs ${
-              message.sender_id === userId ? 'bg-blue-500 text-white ml-auto' : 'bg-gray-200 text-gray-900'
+            className={`mb-4 p-3 rounded-lg max-w-xs flex flex-col ${
+              message.sender_id === userId ? 'bg-red-600 text-white ml-auto' : 'bg-gray-700 text-gray-100 mr-auto'
             }`}
           >
             <p>{message.content}</p>

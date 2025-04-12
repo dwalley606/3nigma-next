@@ -22,9 +22,9 @@ export default async function DashboardLayout({ children }: { children: React.Re
     .single();
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-gray-900 text-gray-100">
       <Header username={profile?.username || 'User'} />
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 bg-gray-900 overflow-hidden">
         {children}
       </div>
     </div>

@@ -73,14 +73,14 @@ export default function Sidebar({ userId }: { userId: string }) {
   if (loading) return <div className="text-gray-900">Loading...</div>;
 
   return (
-    <div className="w-80 bg-gray-50 border-r border-gray-200 flex flex-col h-screen">
-      <div className="p-4 flex-1 overflow-y-auto">
+    <div className="w-80 bg-gray-800 border-r border-gray-700 flex flex-col h-screen overflow-hidden">
+      <div className="p-4 flex-1 overflow-y-auto bg-gray-800 text-gray-100">
         <ConversationList conversations={conversations} />
       </div>
-      <div className="p-4 shrink-0">
+      <div className="p-4 shrink-0 bg-gray-800 border-t border-gray-700 z-10 sticky bottom-10">
         <button
           onClick={handleLogout}
-          className="w-full p-2 bg-red-500 text-white rounded hover:bg-red-600"
+          className="w-full p-2 bg-red-600 text-white rounded hover:bg-red-700"
         >
           Logout
         </button>
