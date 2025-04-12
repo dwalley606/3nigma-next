@@ -77,12 +77,14 @@ export default function Sidebar({ userId }: { userId: string }) {
       <div className="p-4 flex-1 overflow-y-auto">
         <ConversationList conversations={conversations} />
       </div>
-      <button
-        onClick={handleLogout}
-        className="m-4 p-2 bg-red-500 text-white rounded hover:bg-red-600"
-      >
-        Logout
-      </button>
+      <div className="p-4 shrink-0">
+        <button
+          onClick={handleLogout}
+          className="w-full p-2 bg-red-500 text-white rounded hover:bg-red-600"
+        >
+          Logout
+        </button>
+      </div>
     </div>
   );
 }
